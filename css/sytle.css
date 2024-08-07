@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--primary-heading-font:58px;
+	--secondary-heading-size:40px;
+	--font-size:14px;
+	--primary-font-color:#000;
+	--primary-btn-bg-color: #2DC071;
+	--icons-primary-width:16px;
+	--icons-primary-height:16px;
+	--header-font-color:#fff;
+	--font-width-bold:700;
+
+}
+body{
+	font-family: "Montserrat", sans-serif;
+}
+
+.flex{
+	display: flex;
+}
+
+.icons{
+	width: var(--icons-primary-width);
+	height: var(--icons-primary-height);
+}
+
+.align-items{
+	align-items: center;
+}
+
+.list-style{
+	list-style: none;
+}
+
+.hero{
+	background-color: #252B42;
+	padding: 10px 24px;
+	justify-content: space-around;
+	color: var(--header-font-color);
+}
+
+.hero__icon-gap{
+	gap: 10px;
+}
+
+.hero__icon-list-gap{
+	gap: 10px;
+}
+
+.secondary-font-size{
+	font-size: var(--font-size);
+	font-weight: var(--font-width-bold);
+}
