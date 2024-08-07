@@ -10,7 +10,8 @@
 	--primary-heading-font:58px;
 	--secondary-heading-size:40px;
 	--font-size:14px;
-	--primary-font-color:#000;
+	--secondary-font-size:24px;
+	--primary-font-color:#252B42;
 	--primary-btn-bg-color: #2DC071;
 	--icons-primary-width:16px;
 	--icons-primary-height:16px;
@@ -18,6 +19,7 @@
 	--font-width-bold:700;
 
 }
+
 body{
 	font-family: "Montserrat", sans-serif;
 }
@@ -41,8 +43,8 @@ body{
 
 .hero{
 	background-color: #252B42;
-	padding: 10px 24px;
-	justify-content: space-around;
+	padding: 9px 24px;
+	justify-content: space-between;
 	color: var(--header-font-color);
 }
 
@@ -50,11 +52,65 @@ body{
 	gap: 10px;
 }
 
-.hero__icon-list-gap{
-	gap: 10px;
+.icons-gap{
+	gap: 5px;
 }
 
 .secondary-font-size{
 	font-size: var(--font-size);
 	font-weight: var(--font-width-bold);
+}
+
+.search-product{
+	padding: 9px 24px;
+	justify-content: space-between;
+}
+
+ul li a{
+	text-decoration: none;
+}
+
+.search-product-gap{
+	gap: 119px;
+}
+
+.primary-heading{
+	font-size: var(--secondary-font-size);
+	color: var(--primary-font-color);
+	font-weight: var(--font-width-bold);
+}
+
+.search-product__gap{
+	gap: 15px;
+}
+
+.arrow {
+  border: solid #252B42;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.product-search-nav{
+	font-size: var(--font-size);
+	font-weight: bold;
+}
+
+.product-search-nav li a{
+	color: #737373;
+}
+
+.search-product-text{
+	color: #23A6F0;
+}
+
+.search-product-container{
+	padding: 15px;
+	text-align: center;
+	gap: 10px;
 }
