@@ -1,2 +1,2 @@
 # E-commerce-UI
-Live Preview :ecommercelp.netlify.app
+. Live Preview : https://ecommercelp.netlify.app
