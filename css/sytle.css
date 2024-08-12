@@ -164,22 +164,23 @@ h1{
 
 .collection-info{
 	position: absolute;
-	top: 208px;
-  left: 197px;
+	top: 50%;
+	transform: translateY(-50%);
+  	left: 197px;
 }
 
 .left-arrow{
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 40%;
+	transform: translateY(-40%);
 	left: 40px;
 }
 
 .right-arrow{
 	position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 40px;
+  	top: 40%;
+  	transform: translateY(-40%);
+ 	right: 40px;
 }
 
 a:hover{
@@ -605,6 +606,10 @@ button:hover{
 	background-color: #40b99c;
 }
 
+.collection-bg-768{
+	display: none;
+}
+
 @media (max-width:1040px){
 	.featured-product-designer{
 		justify-content: center;
@@ -616,34 +621,13 @@ button:hover{
 		padding-top: 120px;
 	}
 
-	.collection-info {
-		top: 110px;
+	 .collection-info {
 		left: 73px;
 	}
 
-	/* .left-arrow{
-		top: 181px;
-    left: 21px;
-	}
-
-	.right-arrow{
-		top: 181px;
-		right: 21px;
-	} */
 }
 
 @media (max-width:998px){
-	.collection-info{
-		top: 76px;
-	}
-
-	/* .left-arrow{
-		top: 140px;
-	}
-
-	.right-arrow{
-		top: 140px;
-	} */
 
 }
 @media (max-width:768px){
@@ -700,40 +684,26 @@ button:hover{
 	}
 
 	.collection{
-		background-image: url(/assets/collection-bg-768.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		/* padding: 74px; */
 	}
 
 	.collection-bg{
-		visibility: hidden;
+		display: none;
 	}
 
 	.collection-info{
-		position: static;
 		text-align: center;
-		padding-bottom: 131px;
+		left: auto;
+		padding: 30px;
 	}
 
 	h1{
 		font-size: 40px;
-    max-width: 300px;
-    margin:0 auto;
 	}
-/* 
-	.left-arrow{
-		top: 360px;
-	}
-
-	.right-arrow{
-		top: 360px;
-		right: 31px;
-	} */
 
 	.collection-info__text{
-		width: 100%;
-		margin-inline: auto;
+		max-width: 100%;
 	}
 
 	.pickups{
@@ -752,5 +722,28 @@ button:hover{
 	.customer-collection-women{
 		width: 324px;
 	}
+
+	.collection-bg-768{
+		display: block;
+		width: 100%;
+	}
+
+	.left-arrow{
+		top: 50%;
+		transform: translateY(-50%);
+		left: 40px;
+	}
+	
+	.right-arrow{
+		top: 50%;
+		transform: translateY(-50%);
+		right: 31px;
+	}
+
+	.featured-product-designer-design{
+		width: 348px;
+		max-width: 100%;
+	}
 }
+
 
