@@ -929,10 +929,6 @@ form button{
 		display: none;
 	}
 
-	.classic-arrow{
-		top: 45%;
-		transform: translateY(-45%);
-	}
 
 	.footer-socail-links,.footer-link-cotainer {
 		flex-direction: column;
