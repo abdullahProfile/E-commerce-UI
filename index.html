@@ -48,7 +48,7 @@
 		<div class="flex header">
 
 				<div class="flex align-items header-links">
-					<a href="#" class="anchor-links"><p class="brand-text brand-logo">Bandage</p></a>
+					<a href="#" class="anchor-links"><p class="brand-logo">Bandage</p></a>
 
 					<ul id="list" class="flex list-style nav-links spacing-wrapper align-items secondary-txt nav-item-hide">
 						<li><a href="#">Home</a></li>
@@ -56,6 +56,7 @@
 						<li><a href="#">About</a></li>
 						<li><a href="#">Blog</a></li>
 						<li><a href="#">Contact</a></li>
+						<li><a href="#">Pages</a></li>
 					</ul>
 
 				</div>
@@ -100,20 +101,18 @@
 		<section>
 			<div class="collection relative">
 
-				<a href="#" class="left-arrow arrows" id="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="left-arrow arrows" id="prev">
 					<path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
-				</svg></a>
+				</svg>
 
-				<a href="#" class="right-arrow arrows" id="next">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="right-arrow arrows" id="next">
 					<path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
 					</svg>
-				</a>
 
 				<img src="/assets/products/shopeHero.svg" class="collection-bg active" alt="collection-bg">
 				<img src="/assets/products/slide3.svg" class="collection-bg" alt="collection" loading="lazy">
 
-				<img src="/assets/products/collection-bg-768.svg" class="collection-bg-768" alt="collection" loading="lazy">
+				<img src="/assets/products/collection-bg-768.svg" class="collection-bg-768 active" alt="collection" loading="lazy">
 
 				<div class="collection-info">
 						<h5 class="h5">SUMMER 2020</h5>
@@ -349,7 +348,13 @@
 
 			<div class="classic-product relative">
 
-				<a href="#" class="left-arrow arrows classic-arrow slider-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></a>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="left-arrow arrows classic-product-arrow" id="prev">
+					<path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+				</svg>
+
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="right-arrow arrows classic-product-arrow" id="next">
+					<path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+				</svg>
 
 				<div class="flex classic-product-content flex-wrap align-items">
 					<div class="classic-product-text">
@@ -362,13 +367,9 @@
 						</div>
 
 					</div>
-					<div class="classic-product-image-container"><img src="assets/classic.svg" class="classic-product-image" alt="classic products" loading="lazy">
-					</div>
-				</div>
+				<img src="assets/classic.svg" class="classic-product-image" alt="classic products" loading="lazy">
 
-				<a href="#" class="right-arrow arrows classic-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></a>
-				<div class="active activities-container"></div>
-				<div class="inactive activities-container"></div>
+				</div>
 			</div>
 		</section>
 
@@ -376,14 +377,14 @@
 			<div class="buying-section flex">
 
 				<div class="txt-w-img flex align-items">
-					<div class="advestisement"><img src="/assets/products/advertisment.svg" class="advertisment-banner" alt="asian women" loading="lazy"></div>
+					<img src="/assets/products/advertisment.svg" class="text-img" alt="asian women" loading="lazy">
 
 					<div class="txt-w-img-text">
-						<h5 class="h5">SUMMER 2020</h5>
+						<h5 class="h5 txt-w-img-txt">SUMMER 2020</h5>
 						<h3 class="txt-w-img-title">Part of the Neural Universe</h3>
 						<p class="txt-w-img-description">We know how large objects will act, but things on a small scale.</p>
 
-						<div class="flex buying-btn">
+						 <div class="flex buying-btn">
 							<button class="primary-btn white-txt secondary-txt transform-capitalize buy-btn">BUY NOW</button>
 							<button class="primary-btn transform-capitalize read-me-btn">Read me</button>
 						</div>

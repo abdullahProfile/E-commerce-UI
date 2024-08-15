@@ -43,14 +43,5 @@ const list = document.getElementById("list");
 
 mobileMenuIcon.addEventListener("click", function() {
 
-    // if (list.classList.contains("active-menu")) {
-    //     list.classList.remove("active-menu");
-    //     console.log("Class removed");
-        
-    // } else {
-    //     list.classList.add("active-menu");
-    //     console.log("Class Added");
-    // }
-
     list.classList.toggle("active-menu")
 })

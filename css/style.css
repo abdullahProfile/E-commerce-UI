@@ -35,6 +35,11 @@ html:focus-within{
 .flex-wrap{
 	flex-wrap: wrap;
 }
+
+.relative{
+	position: relative;
+}
+
 .icons{
 	width: var(--width);
 	height: var(--icons-primary-height);
@@ -114,10 +119,6 @@ p,a{
 	display: none;
 }
 
-.brand-text{
-	padding-right: 119px;
-}
-
 .brand-logo{
 	font-size: var(--medium-size);
 	color: var(--font-color);
@@ -128,6 +129,10 @@ p,a{
 	font-size: 25px;
 	color: #23856D;
 	font-weight: bolder;
+}
+
+.header-links{
+	gap: 120px;
 }
 
 @media (max-width: 992px) {
@@ -168,9 +173,6 @@ p,a{
 
 	.header{
 		padding: 15px;
-	}
-	.brand-text {
-		padding: 0;
 	}
 }
 
@@ -217,10 +219,6 @@ ul li a{
 
 .primary-btn:hover{
 	background-color: #40b99c;
-}
-
-.relative{
-	position: relative;
 }
 
 .collection{
@@ -402,6 +400,7 @@ a:hover{
 	max-width: 100%;
 	margin-inline: auto;
 	padding-top: 112px;
+	background:#23856D;
 }
 
 .classic-arrow{
@@ -409,16 +408,10 @@ a:hover{
     top: 50%;
     transform: translateY(-50%);
 }
-.classic-collection{
-	background: #23856D;
-}
-.classic-product-image-container{
-	max-width: 443px;
-	margin-bottom: -5px
-}
 
 .classic-product-image{
-	width: 100%;
+	max-width: 443px;
+	max-width: 100%;
 }
 
 .classic-product-text{
@@ -430,6 +423,12 @@ a:hover{
 	font-weight: var(--bold);
 	color: var(--color);
 	padding-top: 30px;
+}
+
+@media (max-width:768px){
+	.classic-product-title{
+		font-size: 40px;
+	}
 }
 
 .classic-product-description{
@@ -452,6 +451,7 @@ a:hover{
 .classic-product-content{
 	justify-content: space-evenly;
 }
+
  @media (max-width:992px){
 	.classic-product-content{
 		flex-direction: column;
@@ -466,13 +466,14 @@ a:hover{
  background-color: #b4b4b4;
 }
 
-.advestisement{
-	max-width: 725px;
-	object-fit: cover;
-}
+/* .advestisement{
 
-.advertisment-banner{
-	width: 100%;
+	object-fit: cover;
+} */
+
+.text-img{
+	max-width: 725px;
+	max-width: 100%;
 }
 
 .txt-w-img-text-session{
@@ -495,6 +496,18 @@ a:hover{
 	line-height: 1.5;
 }
 
+@media (max-width:768px){
+	.txt-w-img-title{
+		max-width: 230px;
+    margin-inline: auto;
+	}
+
+	.txt-w-img-description{
+		max-width: 231px;
+	}
+}
+
+
 .read-me-btn{
 	background: none;
 	color: #2DC071;
@@ -509,7 +522,8 @@ a:hover{
 
 .buying-section{
 	max-width: 1200px;
-	margin-inline: auto;
+	max-width: 100%;
+	justify-content: center;
 }
 
 .buying-btn{
@@ -755,7 +769,6 @@ a:hover{
 }
 
 .input,.Subscirbe-btn{
-	padding: 15px 20px;
 	border: 1px solid #E6E6E6;
 	cursor: pointer;
 }
@@ -764,11 +777,11 @@ a:hover{
 	background: #23A6F0;
 	color: var(--color);
 	font-size: var(--font-size);
-	font-weight: var(--bold);
 	position: absolute;
 	right: 0;
-	top: 63px;
+	top: 64px;
 	border-radius: 0 5px 5px 0;
+	padding: 14px 20px;
 }
 
 .Subscirbe-btn:hover{
@@ -783,6 +796,15 @@ a:hover{
 
  .input{
 	border-radius: 5px;
+	width: 300px;
+	padding: 15px 20px;
+	background: #FAFAFA;
+ }
+
+ @media (max-width:768px){
+	.input{
+		width: 100%;
+	}
  }
 
 .footer-heading{
@@ -814,24 +836,6 @@ a:hover{
 	max-width: 607px;
 	max-width: 100%;
 	text-align: center;
- }
-
- .activities-container{
-	width: 62px;
-	height: 10px;
-	position: absolute;
-	bottom: 49px;
-	background: var(--color);
-	padding: 0;
- }
-
- .active{
-	left: 657px;
- }
-
- .inactive{
-	left: 720px;
-	opacity: 50%;
  }
 
  .svg-icon{
@@ -909,6 +913,11 @@ a:hover{
 	font-size: 12px;
 	color: #737373;
 }
+
+.txt-w-img-txt{
+	color: #BDBDBD;
+}
+
 @media (max-width:1040px){
 
 	.featured-product-designer{
@@ -917,7 +926,6 @@ a:hover{
 
 	.txt-w-img{
 		flex-direction: column-reverse;
-		margin-inline: auto;
 		padding-top: 120px;
 	}
 
@@ -927,14 +935,6 @@ a:hover{
 
 	.classic-product-text{
 		max-width: 100%;
-	}
-
-	.active{
-		left: 430px;
-	}
-
-	.inactive{
-		left: 494px;
 	}
 
 	.product-designer{
@@ -1033,7 +1033,6 @@ a:hover{
 	}
 
 	.header-links{
-		justify-content: space-between;
 		width: 100%;
 		flex-wrap: nowrap;
 	}
@@ -1062,9 +1061,6 @@ a:hover{
 		max-width: 196px;
 	}
 
-	.activities-container{
-		display: none;
-	}
 
 	.change-img-1 img,.change-image img,.change-img img,.responsive1-768 img,.responsive2-768 img,.responsive3-768 img {
 		display: none;
@@ -1113,6 +1109,10 @@ a:hover{
 	width: 171px;
 	padding: 15px;
 	font-size: var(--font-size);
+}
+
+.classic-product-arrow{
+	top: 45%;
 }
 }
 
