@@ -2,7 +2,6 @@ const images = document.querySelectorAll('.collection-bg');
 const sliderButtonsContainer = document.querySelector('.slider-buttons');
 let currentIndex = 0;
 
-// Function to create slider buttons
 function createSliderButtons() {
     sliderButtonsContainer.innerHTML = '';
     images.forEach((_, index) => {
