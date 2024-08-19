@@ -260,3 +260,9 @@
 .footer-link-cotainer{
 	padding: 24px 93px;
 }
+
+@media (max-width:414px){
+	.Subscirbe-btn{
+		right: -55px;
+	}
+}
