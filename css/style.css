@@ -215,10 +215,12 @@ ul li a{
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 24px;
+	transition: all 0.3s ease-in;
 }
 
 .primary-btn:hover{
-	background-color: #40b99c;
+	background-color: #2b4942;
+	color: #FFF;
 }
 
 .collection{
@@ -244,7 +246,7 @@ h1{
 	max-width: 239px;
 	max-width: 100%;
 	flex-direction: column;
-	transition: background-color 0.7s ease-in-out;
+	transition: all 0.3s ease-in;
 }
 
 .featured-product-designer-design:hover{
@@ -283,10 +285,11 @@ h1{
 .footer-icons{
 	fill: #23A6F0;
 	width: 23px;
+	transition: all 0.3s ease-in;
 }
 
 .footer-icons:hover{
-	fill: #252B42;
+	fill: #2f45a0;
 }
 
 a:hover{
@@ -514,6 +517,12 @@ a:hover{
 	font-size: var(--font-size);
 	font-weight: var(--bold);
 	border: 1px solid currentColor;
+	transition: all 0.3s ease-in;
+}
+
+.read-me-btn:hover{
+	background: #000000f3;
+	color: #FFF;
 }
 
 .txt-w-img{
@@ -697,11 +706,12 @@ a:hover{
 	font-weight: bold;
 	border: 0;
 	font-size: 16px;
+	transition: all 0.3s ease-in;
 }
 
 .customer-collection-btn:hover{
 	cursor: pointer;
-	background-color: rgb(131, 121, 121);
+	background-color: rgb(144, 144, 144);
 }
 
 .customer-collection-women{
@@ -749,10 +759,6 @@ a:hover{
 	gap: 16px;
 }
 
-.read-me-btn:hover{
-	background: #66b5e33f;
-}
-
 .collection-bg-768{
 	display: none;
 }
@@ -783,10 +789,11 @@ a:hover{
 	top: 64px;
 	border-radius: 0 5px 5px 0;
 	padding: 14px 20px;
+	transition: all 0.3s ease-in;
 }
 
 .Subscirbe-btn:hover{
-	background: rgba(129, 24, 24, 0.788);
+	background: #252B42;
 }
 
 .input::placeholder{

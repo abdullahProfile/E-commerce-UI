@@ -49,11 +49,11 @@
 	object-fit: cover;
 	overflow: hidden;
 	position: relative;
-	transition: opicity 0.5s ease-in;
+	transition: all 0.5s ease-in;
 }
 
 .img-container:hover{
-	opacity: 0.3;
+	opacity: 0.4;
 }
 
 .img-container img {
@@ -266,3 +266,39 @@
 		right: -55px;
 	}
 }
+
+.pagination{
+	text-align: center;
+	border-radius: 5px;
+	padding-block: 48px;
+}
+
+.pagination a{
+	color: #23A6F0;
+	text-decoration: none;
+	padding: 25px 20px;
+	border: 1px solid #E9E9E9;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	transition: all 0.3s ease-in;
+
+}
+
+.pagination a:hover{
+	background-color: #23A6F0;
+	color: #FFF;
+}
+
+.back{
+	background: #F3F3F3;
+}
+
+.shopping-logo{
+	transition: all 0.3s ease-in;
+}
+
+.shopping-logo :hover{
+	fill: #252B42;
+}
+
