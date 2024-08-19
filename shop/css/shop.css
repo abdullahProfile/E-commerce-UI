@@ -101,8 +101,8 @@
 		left: 50%;
 	}
 
-	.nav-item-hid{
-		display: none;
+	.nav-item-hide{
+		display: none
 	}
 }
 @media (max-width:768px){

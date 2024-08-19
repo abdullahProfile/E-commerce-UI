@@ -698,6 +698,12 @@ a:hover{
 	border: 0;
 	font-size: 16px;
 }
+
+.customer-collection-btn:hover{
+	cursor: pointer;
+	background-color: rgb(131, 121, 121);
+}
+
 .customer-collection-women{
 	object-fit: cover;
 }
@@ -741,11 +747,6 @@ a:hover{
 .customer-collection-col{
 	flex-direction: column;
 	gap: 16px;
-}
-
-.customer-collection-btn:hover{
-	cursor: pointer;
-	 background-color: rgb(131, 121, 121);
 }
 
 .read-me-btn:hover{
@@ -1112,7 +1113,7 @@ a:hover{
 }
 
 .classic-product-arrow{
-	top: 45%;
+	top: 42%;
 }
 }
 
