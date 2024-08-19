@@ -97,15 +97,18 @@
 		width: 100%;
 		max-width: 100%;
 	}
-	.shop-card-img-info{
-		left: 50%;
-	}
 
 	.nav-item-hide{
 		display: none
 	}
+
+	.shop-card-img-info{
+		left: 50%;
+	}
+
 }
 @media (max-width:768px){
+
 	.shop-card-header,.shop-card-img{
 		flex-direction: column;
 	}
@@ -122,7 +125,138 @@
 	.header{
 		padding: 23px 35px;
 	}
+
 	.shop-card{
 		padding: 23px 35px;
 	}
+
+	.shop-card-img-info{
+		left: 35%;
+	}
+
+}
+
+.shop-result{
+	align-items: center;
+	padding: 24px 93px;
+	max-width: 1440px;
+	max-width: 100%;
+}
+
+@media (max-width:768px){
+	.shop-result{
+		flex-direction: column;
+		gap: 24px;
+	}
+}
+.shop-result-text{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.views{
+	align-items: center;
+	gap: 15px;
+}
+
+.view-btn{
+	padding: 16px;
+	border: 1px solid #ECECEC;
+	border-radius: 5px;
+	background: #FFF;
+	transition: all 0.3s ease-in;
+}
+
+.view-btn:hover{
+	background: #c4c4c4;
+}
+
+.sort{
+	display: flex;
+	gap: 15px;
+}
+
+.sort select{
+	padding: 11px 18px;
+	color: #737373;
+	border: 1px solid #DDDDDD;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #f0f0f0;
+}
+
+.filter-btn{
+	padding: 12px 27px;
+	background: #23A6F0;
+	color: #FFF;
+	border: 0;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: all 0.3s ease-in;
+
+}
+
+.filter-btn:hover{
+	background: #252B42;
+}
+
+.view-btn,.filter-btn{
+	cursor: pointer;
+}
+
+.featured-product-designer{
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.featured-product{
+	padding: 24px 93px;
+	max-width: 1440px;
+	max-width: 100%;
+}
+
+@media (max-width:768px){
+	.featured-product-designer-design{
+		width: 100%;
+		justify-content: center;
+	}
+	.featured-product{
+		padding: 24px 35px;
+	}
+}
+
+.company-logo{
+	max-width: 1440px;
+	max-width: 100%;
+	padding: 24px 93px;
+	background: #FAFAFA;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+@media (max-width:992px){
+	.company-logo{
+		justify-content: center;
+	}
+}
+
+@media (max-width:768px){
+	.company-logo{
+		flex-direction: column;
+    gap: 60px;
+    padding-block: 110px;
+	}
+}
+
+.footer-socail-links{
+	background: #FFF;
+	padding: 24px 93px;
+}
+
+.footer-link-cotainer{
+	padding: 24px 93px;
 }
