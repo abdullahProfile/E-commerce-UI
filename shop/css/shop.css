@@ -1,8 +1,11 @@
 @import '/css/style.css';
 
 .announcement-bar{
-    justify-content: space-around;
-    background-color:#23856D;
+	justify-content: space-around;
+	background-color:#23856D;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 .phone-icon:hover{
@@ -49,12 +52,14 @@
 	object-fit: cover;
 	overflow: hidden;
 	position: relative;
-	transition: all 0.5s ease-in;
+	transition: all 0.3s ease-in;
 }
 
 .img-container:hover{
-	opacity: 0.4;
+	transform: scale(1.1);
+	border-radius: 5px;
 }
+
 
 .img-container img {
 	width: 100%;
@@ -185,6 +190,11 @@
 	border-radius: 5px;
 	cursor: pointer;
 	background-color: #f0f0f0;
+	transition: all 0.3s ease-in;
+}
+
+.sort select:hover{
+	box-shadow:  3px 2px #eae7e7;
 }
 
 .filter-btn{
@@ -207,29 +217,29 @@
 	cursor: pointer;
 }
 
-.featured-product-designer{
+.cards-container-card{
 	width: 100%;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.featured-product{
+.cards-container{
 	padding: 24px 93px;
 	max-width: 1440px;
 	max-width: 100%;
 }
 
 @media (max-width:768px){
-	.featured-product-designer-design{
+	.cards-container-card{
 		width: 100%;
-		justify-content: center;
 	}
-	.featured-product{
+	.cards-container{
 		padding: 24px 35px;
 	}
 }
 
-.company-logo{
+.work-with{
 	max-width: 1440px;
 	max-width: 100%;
 	padding: 24px 93px;
@@ -239,13 +249,13 @@
 }
 
 @media (max-width:992px){
-	.company-logo{
+	.work-with{
 		justify-content: center;
 	}
 }
 
 @media (max-width:768px){
-	.company-logo{
+	.work-with{
 		flex-direction: column;
     gap: 60px;
     padding-block: 110px;
@@ -271,6 +281,13 @@
 	text-align: center;
 	border-radius: 5px;
 	padding-block: 48px;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination-two{
+	background: #23A6F0;
+	color: #FFF;
 }
 
 .pagination a{
@@ -295,6 +312,21 @@
 	color: #BDBDBD;
 }
 
+.next{
+	color: #23A6F0;
+}
+
+.next:hover{
+	background-color: #23A6F0;
+	color: #FFF;
+}
+
+.next,.back{
+	padding: 25px 20px;
+	border: 0;
+	cursor: pointer;
+	font-weight: bold;
+}
 .shopping-logo{
 	transition: all 0.3s ease-in;
 }
@@ -303,3 +335,11 @@
 	fill: #252B42;
 }
 
+.nav-icon{
+	fill: #23A6F0;
+	width: 34px;
+}
+
+.header-text{
+	font-size: 30px;
+}
