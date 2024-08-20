@@ -388,6 +388,7 @@ a:hover {
 	gap: 80px;
 	max-width: 1440px;
 	max-width: 100%;
+	padding: 20px;
 	padding-bottom: 80px;
 	margin-inline: auto;
 }
@@ -963,12 +964,13 @@ a:hover {
 
 	.buy-btn {
 		background-color: #23A6F0;
-		width: 151px;
+		max-width: 151px;
 	}
 
 	.buy-btn,.read-me-btn {
 		border-color: #23A6F0;
 		font-size: 14px;
+		padding: 15px 40px;
 		margin-inline: auto;
 	}
 
@@ -1055,25 +1057,6 @@ a:hover {
 	}
 
 
-	.change-img-1 img,.change-image img,.change-img img,.responsive1-768 img,.responsive2-768 img,.responsive3-768 img {
-		display: none;
-	}
-
-	.change-img-1 {
-		content: url(/assets/customers/accesories.svg);
-		width: 100%;
-	}
-
-	.change-image {
-		content: url(/assets/products/expert-porduct.svg);
-		width: 100%;
-	}
-
-	.change-img {
-		content: url(/assets/customers/men.svg);
-		width: 100%;
-	}
-
 	.responsive1-768 {
 		content: url(/assets/new-collection/new-collection-768.svg);
 		width: 100%;
@@ -1101,18 +1084,15 @@ a:hover {
 		display: none;
 	}
 
-.classic-collection-btn {
-	width: 171px;
-	padding: 15px;
-	font-size: var(--font-size);
-}
+	.classic-collection-btn {
+		width: 171px;
+		padding: 15px;
+		font-size: var(--font-size);
+	}
 
-.classic-product-arrow {
-	top: 43%;
-}
+	.classic-product-arrow {
+		top: 43%;
+	}
 
-.card-img{
-	width: 100%;
-}
 }
 
