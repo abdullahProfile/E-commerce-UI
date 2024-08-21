@@ -65,6 +65,8 @@ html:focus-within {
 	width: var(--width);
 	height: var(--icons-primary-height);
 	fill: var(--color);
+	width: 23px;
+	height: 23px;
 }
 
 .icons:hover {

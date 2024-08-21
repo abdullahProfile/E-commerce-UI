@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/product.css">
+	<link rel="stylesheet" href="/css/swiper.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
 	<title>product</title>
 </head>
 <body>
@@ -125,6 +128,25 @@
 		</div>
 	</header>
 
-	<script src="/js/shope.js"></script>
+	<section>
+		<div>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/productPage/slider/sliderOne.svg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/productPage/slider/sliderTwo.svg" />
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="/js/swiper.js"></script>
 </body>
 </html>
