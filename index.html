@@ -5,52 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce UI</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
 
 	<div class="announcement-bar flex jcb aic">
 
-		<div class="flex aic spacing-wrapper">
-
-			<div class="flex aic spacing-wrapper">
-				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icons phone-icon"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></a>
+		<div class="flex aic spacing-wrapper zero-font-size">
+			<div class="flex aic icon-wrapper">
+				<a href="#"><img src="assets/icons/phone.svg" class="icons phone-icon" alt="icon"></a>
 				<p class="universal-color secondary-txt">(225) 555-0118</p>
 			</div>
 
-			<div class="flex spacing-wrapper">
-				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icons"><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg></a>
+			<div class="flex aic icon-wrapper">
+				<a href="#"><img src="assets/icons/gmail.svg" class="icons" alt="icon"></a>
 				<p class="universal-color secondary-txt">michelle.rivera@example.com</p>
 			</div>
 		</div>
 
 		<p class="secondary-txt universal-color">Follow Us  and get a chance to win 80% off</p>
 
-		<div class="flex aic spacing-wrapper">
-
-			<div class="flex spacing-wrapper aic social-links">
+			<div class="flex aic social-links zero-font-size">
 				<p class="secondary-txt universal-color">Follow Us  :</p>
 
 					<a href="#">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icons"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+						<img src="assets/icons/instagram.svg" class="icons" alt="">
 					</a>
 
-					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icons"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
-
-					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icons"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
-
-					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icons"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+					<a href="#"><img src="assets/icons/youtube.svg" class="icons" alt="icons"></a>
+					<a href="#"><img src="assets/icons/facebook.svg" class="icons" alt="icons"></a>
+					<a href="#"><img src="assets/icons/twitter.svg" alt="icons"></a>
 			</div>
 
-		</div>
 	</div>
 
-	<header>
+	 <header>
 		<div class="flex header jcb">
-
 				<div class="flex aic header-links">
 					<a href="#" class="anchor-links"><p class="brand-logo">Bandage</p></a>
 
-					<ul id="list" class="flex list-style nav-links spacing-wrapper aic secondary-txt">
+					<ul id="list" class="flex list-style nav-links aic secondary-txt ul-li">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Shop</a></li>
 						<li><a href="#">About</a></li>
@@ -64,27 +59,20 @@
 				<div class="flex spacing-wrapper aic">
 
 					<div class="flex aic header-icons nav-item-hide">
-						<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icons user-icon">
-							<path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg></a>
+						<a href="#"><img src="assets/icons/login.svg" alt="login"></a>
 						<a href="#" class="header-text secondary-txt anchor-links">Login / Register</a>
 					</div>
 
-					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icons user-icon">
-						<path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
-						</svg>
+					<img src="assets/icons/search.svg" alt="search">
 					</a>
 
 					<div class="flex aic">
-						<a href="#">
-							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="icons user-icon">
-								<path d="M0.000305176 0.5C0.000305176 0.367392 0.0529836 0.240215 0.146752 0.146447C0.24052 0.0526784 0.367697 0 0.500305 0H2.00031C2.11184 3.08115e-05 2.22016 0.0373507 2.30804 0.106025C2.39592 0.174699 2.45831 0.270784 2.48531 0.379L2.89031 2H14.5003C14.5737 2.00007 14.6462 2.0163 14.7127 2.04755C14.7791 2.0788 14.8378 2.12429 14.8847 2.1808C14.9316 2.23731 14.9654 2.30345 14.9838 2.37452C15.0023 2.44558 15.0048 2.51984 14.9913 2.592L13.4913 10.592C13.4699 10.7066 13.409 10.8101 13.3194 10.8846C13.2297 10.9591 13.1169 10.9999 13.0003 11H4.00031C3.88374 10.9999 3.77087 10.9591 3.68122 10.8846C3.59156 10.8101 3.53075 10.7066 3.50931 10.592L2.01031 2.607L1.61031 1H0.500305C0.367697 1 0.24052 0.947322 0.146752 0.853553C0.0529836 0.759785 0.000305176 0.632608 0.000305176 0.5ZM3.10231 3L4.41531 10H12.5853L13.8983 3H3.10231ZM5.00031 11C4.46987 11 3.96116 11.2107 3.58609 11.5858C3.21102 11.9609 3.00031 12.4696 3.00031 13C3.00031 13.5304 3.21102 14.0391 3.58609 14.4142C3.96116 14.7893 4.46987 15 5.00031 15C5.53074 15 6.03945 14.7893 6.41452 14.4142C6.78959 14.0391 7.00031 13.5304 7.00031 13C7.00031 12.4696 6.78959 11.9609 6.41452 11.5858C6.03945 11.2107 5.53074 11 5.00031 11ZM12.0003 11C11.4699 11 10.9612 11.2107 10.5861 11.5858C10.211 11.9609 10.0003 12.4696 10.0003 13C10.0003 13.5304 10.211 14.0391 10.5861 14.4142C10.9612 14.7893 11.4699 15 12.0003 15C12.5307 15 13.0394 14.7893 13.4145 14.4142C13.7896 14.0391 14.0003 13.5304 14.0003 13C14.0003 12.4696 13.7896 11.9609 13.4145 11.5858C13.0394 11.2107 12.5307 11 12.0003 11ZM5.00031 12C5.26552 12 5.51988 12.1054 5.70741 12.2929C5.89495 12.4804 6.00031 12.7348 6.00031 13C6.00031 13.2652 5.89495 13.5196 5.70741 13.7071C5.51988 13.8946 5.26552 14 5.00031 14C4.73509 14 4.48073 13.8946 4.2932 13.7071C4.10566 13.5196 4.00031 13.2652 4.00031 13C4.00031 12.7348 4.10566 12.4804 4.2932 12.2929C4.48073 12.1054 4.73509 12 5.00031 12ZM12.0003 12C12.2655 12 12.5199 12.1054 12.7074 12.2929C12.8949 12.4804 13.0003 12.7348 13.0003 13C13.0003 13.2652 12.8949 13.5196 12.7074 13.7071C12.5199 13.8946 12.2655 14 12.0003 14C11.7351 14 11.4807 13.8946 11.2932 13.7071C11.1057 13.5196 11.0003 13.2652 11.0003 13C11.0003 12.7348 11.1057 12.4804 11.2932 12.2929C11.4807 12.1054 11.7351 12 12.0003 12Z" fill="#23A6F0"/>
-								</svg>
-						</a>
+						<a href="#"><img src="assets/icons/addTocart.svg" alt="add to cart"></a></a>
 						<p class="header-text counter">1</p>
 					</div>
 
 					<div class="flex aic nav-item-hide">
-						<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icons user-icon"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg></a>
+						<a href="#"><img src="assets/icons/heart.svg" alt="heart"></a>
 						<p class="header-text counter">1</p>
 					</div>
 
@@ -98,22 +86,26 @@
 			</div>
 	</header>
 
-	<main>
+	 <main>
 		<section>
 			<div class="collection relative">
 
-				<svg class="left-arrow arrows" id="prev" width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4993 43.7724C23.341 43.9302 23.1529 44.0554 22.9458 44.1408C22.7387 44.2263 22.5167 44.2703 22.2925 44.2703C22.0683 44.2703 21.8463 44.2263 21.6392 44.1408C21.4321 44.0554 21.244 43.9302 21.0857 43.7724L0.631107 23.4352C0.472368 23.2778 0.346428 23.0908 0.260496 22.8849C0.174566 22.679 0.130333 22.4582 0.130333 22.2353C0.130333 22.0124 0.174566 21.7917 0.260496 21.5858C0.346428 21.3799 0.472368 21.1928 0.631107 21.0354L21.0857 0.698261C21.4057 0.380028 21.8398 0.201248 22.2925 0.201248C22.7451 0.201248 23.1792 0.380028 23.4993 0.698261C23.8194 1.01649 23.9992 1.4481 23.9992 1.89815C23.9992 2.3482 23.8194 2.77981 23.4993 3.09805L4.24815 22.2353L23.4993 41.3726C23.658 41.53 23.784 41.717 23.8699 41.9229C23.9558 42.1288 24.0001 42.3496 24.0001 42.5725C24.0001 42.7954 23.9558 43.0161 23.8699 43.222C23.784 43.4279 23.658 43.6149 23.4993 43.7724Z" fill="white"/>
-					</svg>
-
-					<svg  class="right-arrow arrows" id="next" width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M0.565959 0.698218C0.724296 0.540391 0.912395 0.415172 1.11948 0.329734C1.32657 0.244296 1.54857 0.200317 1.77278 0.200317C1.99698 0.200317 2.21899 0.244296 2.42607 0.329734C2.63316 0.415172 2.82126 0.540391 2.9796 0.698218L23.4341 21.0354C23.5929 21.1928 23.7188 21.3798 23.8048 21.5857C23.8907 21.7916 23.9349 22.0124 23.9349 22.2353C23.9349 22.4582 23.8907 22.6789 23.8048 22.8848C23.7188 23.0907 23.5929 23.2777 23.4341 23.4352L2.9796 43.7723C2.65953 44.0906 2.22542 44.2693 1.77278 44.2693C1.32013 44.2693 0.886027 44.0906 0.565959 43.7723C0.245891 43.4541 0.066078 43.0225 0.066078 42.5724C0.066078 42.1224 0.245891 41.6908 0.565959 41.3725L19.8171 22.2353L0.565959 3.098C0.407221 2.94057 0.281279 2.75356 0.195347 2.54766C0.109416 2.34176 0.0651855 2.12103 0.0651855 1.89811C0.0651855 1.67519 0.109416 1.45446 0.195347 1.24856C0.281279 1.04267 0.407221 0.855647 0.565959 0.698218Z" fill="white"/>
-					</svg>
-
-				<img src="assets/products/shopeHero.svg" class="collection-bg active" alt="collection-bg">
-				<img src="assets/" class="collection-bg" alt="collection" loading="lazy">
-
-				<img src="assets/products/collection-bg-768.svg" class="collection-bg-768" alt="collection" loading="lazy">
+				<div>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="assets/slider/homePageSlider.svg"/>
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/slider/homePageSliderTwo.svg" />
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+		
+				</div>
 
 				<div class="collection-info">
 						<h5 class="h5">SUMMER 2020</h5>
@@ -122,13 +114,11 @@
 
 						<a href="pages/shop.html" class="primary-btn universal-color text-primary transform-capitalize anchor-links" target="_parent">Shop Now</a>
 				</div>
-
-				<div class="slider-buttons"></div>
 			</div>
 	</section>
 
 
-		<section>
+		<section class="editor">
 			<div class="flex editor-pick aic fdc">
 
 				<div class="editor-pick-info">
@@ -139,14 +129,14 @@
 				<div class="card__collection flex">
 					<div class="men-card relative">
 						<a href="#">
-							<img src="assets/customers/men.svg" class="card__collection-image" alt="men">
+							<img src="assets/images/editors/men.svg" class="card__collection-image" alt="men">
 						</a>
 						<button class="card__collection-btn">men</button>
 				</div>
 
 					<div class="women-card relative">
 						<a href="#">
-							<img src="assets/customers/women.svg" class="card__collection-image" alt="">
+							<img src="assets/images/editors/women.svg" class="card__collection-image" alt="">
 						</a>
 						<button class="card__collection-btn women-collection">women</button>
 					</div>
@@ -154,14 +144,14 @@
 					<div class="card__collection-col fdc flex">
 						<div class="relative accesories-card">
 							<a href="#">
-								<img src="assets/customers/accesories.svg" class="card__collection-image"  alt="">
+								<img src="assets/images/editors/acce.svg" class="card__collection-image"  alt="">
 							</a>
 							<button class="card__collection-btn transform-capitalize accesories-collection">accesories</button>
 						</div>
 
 						<div class="relative kids-card">
 							<a href="#">
-								<img src="assets/customers/kids.svg" class="card__collection-image"  alt="">
+								<img src="assets/images/editors/kids.svg" class="card__collection-image"  alt="">
 							</a>
 							<button class="card__collection-btn transform-capitalize accesories-collection">kids</button>
 						</div>
@@ -171,7 +161,8 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="design">
+	
 			<div class="cards-container fdc flex aic">
 				<div class="cards-container-text">
 					<p class="cards-container-title">Featured Products</p>
@@ -182,7 +173,7 @@
 				<div class="cards-container-card flex">
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/products/product.svg" class="card-img" alt="product2">
+						<img src="assets/images/Designers/cardOne.svg" class="card-img" alt="product2">
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -203,7 +194,7 @@
 
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/products/product-1.svg" class="card-img" alt="product2">
+						<img src="assets/images/Designers/cardTwo.svg" class="card-img" alt="product2">
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -224,7 +215,7 @@
 
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/products/product-2.svg" class="card-img"  alt="product2">
+						<img src="assets/images/Designers/cardtThree.svg" class="card-img"  alt="product2">
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -245,7 +236,7 @@
 
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/products/product-3.svg" class="card-img" alt="product2">
+						<img src="assets/images/Designers/cardFour.svg" class="card-img" alt="product2">
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -268,7 +259,7 @@
 				<div class="cards-container-card flex">
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/products/product-4.svg" class="change-img-1" alt="product2">
+						<img src="assets/images/Designers/cardFive.svg" class="change-img-1" alt="product2">
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -289,7 +280,7 @@
 
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/products/product-5.svg" class="change-image" alt="product2">
+						<img src="assets/images/Designers/cardSixth.svg" class="change-image" alt="product2">
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -310,7 +301,7 @@
 
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/products/product-6.svg" class="change-image" alt="product2">
+						<img src="assets/images/Designers/cardSiven.svg" class="change-image" alt="product2">
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -331,7 +322,7 @@
 
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/products/product-7.svg" class="change-img" alt="product2">
+						<img src="assets/images/Designers/cardEight.svg" class="change-img" alt="product2">
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -381,7 +372,7 @@
 						</div>
 
 					</div>
-				<img src="assets/classic.svg" class="classic-product-image" alt="classic products" loading="lazy">
+				<img src="assets/images/Designers/classic.svg" class="classic-product-image" alt="classic products" loading="lazy">
 
 				</div>
 				<div class="slider-buttons"></div>
@@ -392,7 +383,7 @@
 			<div class="buying-section jcc flex">
 
 				<div class="txt-w-img flex aic">
-					<img src="assets/products/advertisment.svg" class="text-img" alt="asian women" loading="lazy">
+					<img src="assets/images/Designers/buy.svg" class="text-img" alt="asian women" loading="lazy">
 
 					<div class="txt-w-img-text">
 						<h5 class="h5 txt-w-img-txt">SUMMER 2020</h5>
@@ -420,7 +411,7 @@
 					<div class="cards-items">
 
 						<div class="cards-items-description">
-							<div class="cards-description-picture responsive1-768"><img src="assets/posts/post-1.svg" class="cards-img" alt="post" loading="lazy"></div>
+							<div class="cards-description-picture responsive1-768"><img src="assets/images/newProduct/newCard.svg" class="cards-img" alt="post" loading="lazy"></div>
 
 							<div class="cards-description-details">
 								<ul class="cards-items-list flex">
@@ -434,18 +425,18 @@
 
 								<div class="flex post-announcment aic jcb">
 									<div class="timer flex aic">
-										<img src="assets/posts/timeMark.svg" class="post-img" alt="timer-marker">
+										<img src="assets/images/newProduct/timer.svg" class="post-img" alt="timer-marker">
 										<p class="post-txt">22 April 2021</p>
 									</div>
 									<div class="trading flex aic">
-										<img src="assets/posts/trading.svg" class="post-img" alt="trade">
+										<img src="assets/images/newProduct/comment.svg" class="post-img" alt="trade">
 										<p class="post-txt">10 comments</p>
 									</div>
 								</div>
 
 								<div class="flex more-details-link aic">
 									<a href="#">Learn more</a>
-									<a href=""><img src="assets/posts/coloredArrow.svg" class="details-arrow" alt="arrow"></a>
+									<a href=""><img src="assets/images/newProduct/newArrow.svg" class="details-arrow" alt="arrow"></a>
 								</div>
 
 							</div>
@@ -456,7 +447,7 @@
 				<div class="cards-items">
 
 					<div class="cards-items-description">
-						<div class="cards-description-picture responsive2-768"><img src="assets/posts/post.svg" class="cards-img" alt="post" loading="lazy"></div>
+						<div class="cards-description-picture responsive2-768"><img src="assets/images/newProduct/newCardTwo.svg" class="cards-img" alt="post" loading="lazy"></div>
 
 						<div class="cards-description-details">
 							<ul class="cards-items-list flex">
@@ -470,12 +461,12 @@
 
 							<div class="flex post-announcment aic jcb">
 								<div class="timer flex aic">
-									<img src="assets/posts/timeMark.svg" class="post-img" alt="timer-marker">
+									<img src="assets/images/newProduct/timer.svg" class="post-img" alt="timer-marker">
 									<p class="post-txt">22 April 2021</p>
 								</div>
 
 								<div class="trading flex aic">
-									<img src="assets/posts/trading.svg" class="post-img" alt="trade">
+									<img src="assets/images/newProduct/comment.svg" class="post-img" alt="trade">
 									<p class="post-txt">10 comments</p>
 								</div>
 
@@ -483,7 +474,7 @@
 
 							<div class="flex more-details-link aic">
 								<a href="#">Learn more</a>
-								<a href=""><img src="assets/posts/coloredArrow.svg" class="details-arrow" alt="arrow"></a>
+								<a href=""><img src="assets/images/newProduct/newArrow.svg" class="details-arrow" alt="arrow"></a>
 							</div>
 						</div>
 
@@ -494,7 +485,7 @@
 				<div class="cards-items">
 
 					<div class="cards-items-description">
-						<div class="cards-description-picture responsive3-768"><img src="assets/posts/post-2.svg" class="cards-img" alt="post" loading="lazy"></div>
+						<div class="cards-description-picture responsive3-768"><img src="assets/images/newProduct/newCardTwo.svg" class="cards-img" alt="post" loading="lazy"></div>
 
 						<div class="cards-description-details">
 							<ul class="cards-items-list flex">
@@ -508,18 +499,18 @@
 
 							<div class="flex post-announcment aic jcb">
 								<div class="timer flex aic">
-									<img src="assets/posts/timeMark.svg" class="post-img" alt="timer-marker">
+									<img src="assets/images/newProduct/timer.svg" class="post-img" alt="timer-marker">
 									<p class="post-txt">22 April 2021</p>
 								</div>
 								<div class="trading flex aic">
-									<img src="assets/posts/trading.svg" class="post-img" alt="trade">
+									<img src="assets/images/newProduct/comment.svg" class="post-img" alt="trade">
 									<p class="post-txt">10 comments</p>
 								</div>
 							</div>
 
 								<div class="flex more-details-link aic">
 									<a href="#">Learn more</a>
-									<a href=""><img src="assets/posts/coloredArrow.svg" class="details-arrow" alt="arrow"></a>
+									<a href=""><img src="assets/images/newProduct/newArrow.svg" class="details-arrow" alt="arrow"></a>
 								</div>
 
 							</div>
@@ -612,5 +603,7 @@
 	</main>
 	<script src="js/script.js">
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/swiper.js"></script>
 </body>
 </html>

@@ -65,24 +65,18 @@ html:focus-within {
 	width: var(--width);
 	height: var(--icons-primary-height);
 	fill: var(--color);
-	width: 23px;
-	height: 23px;
 }
 
-.icons:hover {
-	fill: #23A6F0;
+.zero-font-size{
+	font-size: 0;
 }
 
-.phone-icon:hover {
-	fill: #23856D;
+.icon-wrapper{
+	gap: 5px;
 }
 
-.user-icon {
-	fill: #23A6F0;
-}
-
-.user-icon:hover {
-	fill: #23856D;
+.ul-li{
+	gap: 15px;
 }
 
 .transform-capitalize {
@@ -95,13 +89,12 @@ p,a {
 
 .announcement-bar {
 	background-color: #252B42;
-	padding: 14px 34px;
+	padding: 19px 34px 15px 34px;
 	color: var(--color);
 	font-size: var(--font-size);
 	font-weight: var(--bold);
 	max-width: 1440px;
 	max-width: 100%;
-	font-size: 0;
 }
 
 @media (max-width:992px) {
@@ -111,9 +104,12 @@ p,a {
 }
 
 .spacing-wrapper {
-	gap: 20px;
+	gap: 10px;
 }
 
+.social-links{
+	gap: 10px;
+}
 
 .text-primary {
 	font-size: var(--secondary-font-size);
@@ -125,8 +121,8 @@ p,a {
 }
 
 .header {
-	padding: 14px 34px;
-	max-width: 1437px;
+	padding: 16px 19px 16px 38px;
+	max-width: 1440px;
 	max-width: 100%;
 	flex-wrap: nowrap;
 	font-size: 0;
@@ -216,12 +212,12 @@ ul li a {
 }
 
 .header-icons {
-	gap: 10px;
+	gap: 6px;
 }
 
 .counter {
 	font-size: 12px;
-	padding-left: 10px;
+	margin-left: 5px;
 }
 
 .primary-btn {
@@ -314,29 +310,6 @@ a:hover {
 	color: #23A6F0;
 }
 
-.collection-bg {
-	width: 100%;
-	object-fit: cover;
-	display: none;
-	z-index: -1;
-	animation-name: slideInFade;
-	animation: slideInFade 1s ease-out forwards;
-}
-
-@keyframes slideInFade {
-	0% {
-		opacity: 0;
-		transform: translateX(50px) scale(0.95);
-}
-	50% {
-		opacity: 0.5;
-		transform: translateX(-10px) scale(1.05);
-}
-	100% {
-		opacity: 1;
-		transform: translateX(0) scale(1);
-}
-}
 
 .cards-container-card-title {
 	font-weight: var(--bold);
@@ -383,7 +356,6 @@ a:hover {
 
 .tranparent-shapes {
 	gap: 6px;
-	padding-bottom: 20px;
 }
 
 .cards-container {
@@ -397,6 +369,7 @@ a:hover {
 
 .cards-container-card {
 	gap: 30px;
+	flex-wrap: wrap;
 }
 
 .cards-container-title {
