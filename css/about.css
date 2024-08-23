@@ -1,0 +1,149 @@
+@import '../css/product.css';
+@import '../css/shop.css';
+@import '../css/style.css';
+
+.nav-item-hide{
+	display: none;
+}
+
+.member-ship-link{
+	font-size: 14px;
+	text-decoration: none;
+	color: #23A6F0;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.member-ship{
+	display: flex;
+	gap: 45px;
+}
+
+.become-member{
+	padding: 15px 25px;
+	background-color: #23A6F0;
+	color: #fff;
+	border-radius: 5px;
+	transition: all 0.3s ease-in;
+
+	&:hover{
+		background-color: #000;
+	}
+}
+
+.header{
+	justify-content: space-around;
+}
+
+.transparent-primary{
+	background-color: #FFE9EA;
+	border-radius: 50%;
+	border: 0;
+	position: absolute;
+}
+
+.primary-div{
+	width: 484px;
+	height: 484px;
+	right: 0;
+}
+
+.about-us{
+	max-width: 1050px;
+	align-items: center;
+	margin-inline: auto;
+	margin-block: 180px;
+}
+
+.about-us-link{
+	background-color: #23A6F0;
+	color: #fff;
+	padding: 15px 33px;
+	text-decoration: none;
+	max-width: 193px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 700;
+	transition: all 0.3s ease-in;
+	
+	&:hover{
+		background-color: #000;
+	}
+}
+
+.about-us-info{
+	max-width: 510px;
+	gap: 35px;
+	padding: 10px;
+}
+
+.about-us__img{
+	position: absolute;
+	right: -80px;
+}
+
+.about-company{
+	color: #252B42;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.about-us-heading{
+	font-size: 58px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #252B42;
+}
+
+.about-us-description{
+	font-size: 20px;
+	max-width: 376px;
+}
+
+.primary-div-2nd{
+	position: absolute;
+	width: 77px;
+	height: 77px;
+	top: 77px;
+  left: 490px;
+}
+
+.primary-div-3rd{
+	position: absolute;
+	width: 33px;
+	height: 33px;
+	bottom: 165px;
+  right: -60px;
+}
+
+.tranparent-secondary{
+	background: #977DF4;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.secondary-1st {
+	bottom: 0;
+	left: 524px;
+}
+
+.secondary-2nd {
+	top: 171px;
+	right: -60px;
+}
+
+.customer-review-container {
+	max-width: 1440px;
+	max-width: 100%;
+}
+
+.customer-review-container-info{
+	max-width: 1080px;
+}
+
+.customer-review-txt{
+	color: #E74040;
+	font-size: 14px;
+}
