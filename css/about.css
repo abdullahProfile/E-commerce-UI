@@ -45,14 +45,19 @@
 .primary-div{
 	width: 484px;
 	height: 484px;
-	right: 0;
+	right: 58px;
+	top: 0;
+	z-index: -1;
 }
 
 .about-us{
-	max-width: 1050px;
-	align-items: center;
+	max-width: 1440px;
+	max-width: 100%;
 	margin-inline: auto;
-	margin-block: 180px;
+	justify-content: space-around;
+	padding: 50px;
+	gap: 30px;
+	flex-wrap: wrap;
 }
 
 .about-us-link{
@@ -77,10 +82,6 @@
 	padding: 10px;
 }
 
-.about-us__img{
-	position: absolute;
-	right: -80px;
-}
 
 .about-company{
 	color: #252B42;
@@ -104,16 +105,15 @@
 	position: absolute;
 	width: 77px;
 	height: 77px;
-	top: 77px;
-  left: 490px;
+	top: 0;
 }
 
 .primary-div-3rd{
 	position: absolute;
 	width: 33px;
 	height: 33px;
-	bottom: 165px;
-  right: -60px;
+	bottom: 375px;
+	right: 0;
 }
 
 .tranparent-secondary{
@@ -125,16 +125,109 @@
 }
 
 .secondary-1st {
-	bottom: 0;
-	left: 524px;
+	bottom: 258px;
 }
 
 .secondary-2nd {
-	top: 171px;
-	right: -60px;
+	top: 140px;
+	right: 0;
 }
 
-.customer-review-container {
+.img-div {
+	max-width: 571px;
+}
+
+@media (max-width:992px){
+	.about-us {
+		flex-direction: column;
+		text-align: center;
+		gap: 41px;
+		padding: 20px;
+	}
+
+	.about-us-link{
+		margin-inline: auto;
+	}
+
+	.member-ship{
+		display: none;
+	}
+
+	.nav-item-hide{
+		display: flex;
+	}
+
+	.img-div{
+		max-width: 500px;
+		margin-left: auto;
+	}
+
+	.about-us__img{
+		width: 100%;
+	}
+
+	.img-w-container {
+		max-width: 100%;
+	}
+
+	.primary-div-2nd {
+		width: 47px;
+    height: 47px;
+}
+	.primary-div {
+		width: 430px;
+    height: 430px;
+	}
+}
+
+@media (max-width:768px){
+	.primary-div {
+		width: 295px;
+		height: 295px;
+	}
+
+	.primary-div-2nd {
+		width: 47px;
+		height: 47px;
+		left: 100px;
+	}
+
+	.secondary-2nd {
+		top: 0;
+		right: 0;
+	}
+
+	.secondary-1st {
+		bottom: 338px;
+		left: 99px;
+	}
+
+}
+
+@media (max-width:550px) {
+	.img-div{
+		max-width: 375px;
+	}
+
+	.primary-div {
+		width: 250px;
+		height: 250px;
+}
+
+.primary-div-2nd {
+	left: 0;
+}
+
+.primary-div-3rd {
+	bottom: 292px;
+}
+
+.secondary-1st {
+	bottom: 211px;
+	left: 28px;
+}
+}
+/* .customer-review-container {
 	max-width: 1440px;
 	max-width: 100%;
 }
@@ -146,4 +239,4 @@
 .customer-review-txt{
 	color: #E74040;
 	font-size: 14px;
-}
+} */
