@@ -947,6 +947,7 @@ a:hover {
 		font-size: 14px;
 		padding: 15px 40px;
 		margin-inline: auto;
+		max-width: 100%;
 	}
 
 	.read-me-btn {
@@ -1033,17 +1034,17 @@ a:hover {
 
 
 	.responsive1-768 {
-		content: url(/assets/new-collection/new-collection-768.svg);
+		content: url(../assets/images/newitems/newItems.svg);
 		width: 100%;
 	}
 
 	.responsive2-768 {
-		content: url(/assets/new-collection/new-collection2-768.svg);
+		content: url(../assets/images/newitems/newItemsTwo.svg);
 		width: 100%;
 	}
 
 	.responsive3-768 {
-		content: url(/assets/new-collection/new-collection3-768.svg);
+		content: url(../assets/images/newitems/newItemsThree.svg);
 		width: 100%;
 	}
 
@@ -1069,5 +1070,14 @@ a:hover {
 		top: 43%;
 	}
 
+	.swiper {
+		height: 752px !important;
+	}
+}
+
+@media (max-width:400px) {
+	.swiper {
+		height: 500px !important;
+	}
 }
 
