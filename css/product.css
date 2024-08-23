@@ -1,4 +1,279 @@
-@import 'css/style.css';
-@import 'css/shop.css';
-@import 'css/swiper.css';
+@import '../css/style.css';
+@import '../css/shop.css';
+@import '../css/swiper.css';
 
+.swiper{
+    max-width: 500px !important;
+		height: 510px !important;
+		margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.review-container{
+	max-width: 510px;
+	display: flex;
+	flex-direction: column;
+	gap: 56px;
+}
+
+.review-container-description {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.review{
+	display: flex;
+	gap: 34px;
+	flex-direction: column;
+	max-width: 1440px;
+	max-width: 100%;
+	background: #FAFAFA;
+	padding: 24px 195px;
+}
+
+.swiper-w-text{
+	display: flex;
+	gap: 34px;
+}
+
+@media (max-width:992px){
+	.swiper-w-text{
+		flex-direction: column;
+	}
+
+	.review{
+		padding: 34px;
+		align-items: center;
+	}
+}
+.product-review{
+    gap: 5px;
+    align-items: center;
+}
+
+.product-review p {
+    color: #737373;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.product-price{
+    font-size: 24px;
+    font-weight: 700;
+    color: #252B42;
+    line-height: .75;
+    letter-spacing: .1px;
+}
+
+.product-stock{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.14;
+}
+
+.product-stock span{
+	color: #23A6F0;
+}
+
+.review-container-info{
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: capitalize;
+	color:#858585;
+	line-height: 20px;
+	padding-bottom: 27px;
+	border-bottom: 1px solid;
+}
+
+.tranparent-div{
+	width: 30px;
+	height: 30px;
+}
+
+.product-name{
+	color: #252B42;
+	font-size: 20px;
+}
+
+.review-option {
+	padding: 10px 20px;
+	background-color: #23A6F0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+
+	&:hover{
+		background-color: #252B42;
+	}
+}
+
+
+.review-option-anchor{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #E8E8E8;
+	border-color: #E8E8E8;
+	padding: 10px;
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+
+	&:hover{
+		background-color: #aca5a5;
+	}
+}
+
+.review-option-anchor svg{
+	width: 100%;
+	object-fit: cover;
+}
+
+.review-container-selection{
+	gap: 10px;
+	display: flex;
+}
+
+.faq-container{
+	max-width: 1440px;
+	max-width: 100%;
+	padding: 24px 192px;
+	gap: 25px;
+}
+
+@media (max-width:1040px){
+	.faq-container{
+		padding: 34px;
+	}
+}
+
+.faq-nav{
+	gap: 24px;
+}
+.faq-nav-link{
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+}
+
+.faq-nav-link span{
+	color: #23856D;
+}
+
+.faq-container-img{
+	max-width: 316px;
+}
+
+.faq-container-img img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.faq-container-txt{
+	max-width: 332px;
+}
+
+.faq-container-txt p {
+	font-size: 14px;
+	line-height: 20px;
+	padding-block: 14px;
+}
+
+.faq-container-txt-heading{
+	font-size: 24px;
+	font-weight: bold;
+	color: #252B42;
+}
+
+.arrow {
+  border: solid #737373;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.faq-question-info{
+	font-weight: 700;
+}
+
+.faq-question{
+	gap: 10px;
+}
+
+.faq-container-secondary {
+	gap: 30px;
+	border-top: 1px solid #ECECEC;
+	padding-top: 20px;
+}
+
+@media (max-width:1040px){
+	.swiper{
+		max-width: 900px !important;
+	}
+
+	.announcement-bar{
+		padding: 80px;
+	}
+}
+
+@media (max-width:992px) {
+	.faq-container-secondary{
+		flex-direction: column;
+	}
+
+	.announcement-bar{
+		display: none;
+	}
+
+	.swiper{
+		max-width: 700px !important;
+	}
+}
+
+@media (max-width:768px){
+	.swiper{
+		max-width: 348px !important;
+	}
+}
+
+.questions{
+	gap: 25px;
+}
+
+.faq-question-container{
+	gap: 10px;
+}
+
+.card-txt{
+	background: #FFFFFF;
+	padding-block: 0;
+}
+
+.cards-container {
+	background: #FAFAFA;
+}
+
+@media (max-width:992px){
+	.cards-container-card {
+		align-items: center;
+	}
+
+	.card-txt{
+		max-width: 239px;
+	}
+
+	.faq-nav{
+		gap: 5px;
+	}
+}
