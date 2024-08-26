@@ -40,7 +40,7 @@
 
 	</div>
 
-	 <header>
+	 <header class="main-header">
 		<div class="flex header jcb">
 				<div class="flex aic header-links">
 					<a href="#" class="anchor-links"><p class="brand-logo">Bandage</p></a>
@@ -115,45 +115,45 @@
 						<a href="pages/shop.html" class="primary-btn universal-color text-primary transform-capitalize anchor-links" target="_parent">Shop Now</a>
 				</div>
 			</div>
-	</section>
+		</section>
 
 
-		<section class="editor">
-			<div class="flex editor-pick aic fdc">
+		<section class="product-categories">
+			<div class="flex categories aic fdc">
 
-				<div class="editor-pick-info">
-					<h3 class="editor-pick-heading transform-capitalize">EDITOR’S PICK</h3>
-					<p class="editor-pick-paragraph">Problems trying to resolve the conflict between </p>
+				<div class="categories-info">
+					<h3 class="categories-heading transform-capitalize">EDITOR’S PICK</h3>
+					<p class="categories-paragraph">Problems trying to resolve the conflict between </p>
 				</div>
 
-				<div class="card__collection flex">
-					<div class="men-card relative">
+				<div class="categories-container flex">
+					<div class="men-categories relative">
 						<a href="#">
-							<img src="assets/images/editors/men.svg" class="card__collection-image" alt="men">
+							<img src="assets/images/editors/men.svg" class="categories-container-image" alt="men">
 						</a>
-						<button class="card__collection-btn">men</button>
+						<button class="categories-container-btn">men</button>
 				</div>
 
-					<div class="women-card relative">
+					<div class="women-categories relative">
 						<a href="#">
-							<img src="assets/images/editors/women.svg" class="card__collection-image" alt="">
+							<img src="assets/images/editors/women.svg" class="categories-container-image" alt="">
 						</a>
-						<button class="card__collection-btn women-collection">women</button>
+						<button class="categories-container-btn women-collection-btn">women</button>
 					</div>
 
-					<div class="card__collection-col fdc flex">
-						<div class="relative accesories-card">
+					<div class="categories-col-container fdc flex">
+						<div class="relative accesories-categories">
 							<a href="#">
-								<img src="assets/images/editors/acce.svg" class="card__collection-image"  alt="">
+								<img src="assets/images/editors/acce.svg" class="categories-container-image"  alt="">
 							</a>
-							<button class="card__collection-btn transform-capitalize accesories-collection">accesories</button>
+							<button class="categories-container-btn transform-capitalize accesories-collection">accesories</button>
 						</div>
 
-						<div class="relative kids-card">
+						<div class="kids-categories relative">
 							<a href="#">
-								<img src="assets/images/editors/kids.svg" class="card__collection-image"  alt="">
+								<img src="assets/images/editors/kids.svg" class="categories-container-image"  alt="">
 							</a>
-							<button class="card__collection-btn transform-capitalize accesories-collection">kids</button>
+							<button class="categories-container-btn transform-capitalize accesories-collection">kids</button>
 						</div>
 
 					</div>
@@ -161,8 +161,8 @@
 			</div>
 		</section>
 
-		<section class="design">
-	
+		<section>
+
 			<div class="cards-container fdc flex aic">
 				<div class="cards-container-text">
 					<p class="cards-container-title">Featured Products</p>
@@ -173,14 +173,18 @@
 				<div class="cards-container-card flex">
 					<div class="card-txt fdc flex aic">
 
-						<img src="assets/images/Designers/cardOne.svg" class="card-img" alt="product2">
+						<div>
+							<a href="#"><img src="assets/images/Designers/cardOne.svg" class="card-img" alt="product2"></a>
+						</div>
 
-						<h4 class="cards-container-card-title">Graphic Design</h4>
-						<p class="secondary-txt">English Department</p>
-
-						<div class="product-price flex">
-							<p class="product-price-primary">$16.48</p>
-							<p class="product-price-secondary">$6.48</p>
+						<div>
+							<h4 class="cards-container-card-title">Graphic Design</h4>
+							<p class="secondary-txt">English Department</p>
+	
+							<div class="product-price flex">
+								<p class="product-price-primary">$16.48</p>
+								<p class="product-price-secondary">$6.48</p>
+							</div>
 						</div>
 
 						<div class="flex tranparent-shapes">
@@ -193,29 +197,7 @@
 					</div>
 
 					<div class="card-txt fdc flex aic">
-
-						<img src="assets/images/Designers/cardTwo.svg" class="card-img" alt="product2">
-
-						<h4 class="cards-container-card-title">Graphic Design</h4>
-						<p class="secondary-txt">English Department</p>
-
-						<div class="product-price flex">
-							<p class="product-price-primary">$16.48</p>
-							<p class="product-price-secondary">$6.48</p>
-						</div>
-
-						<div class="flex tranparent-shapes">
-							<div class="tranparent-div tranparent-primary"></div>
-							<div class="tranparent-div tranparent-orang"></div>
-							<div class="tranparent-div tranparent-orang"></div>
-							<div class="tranparent-div tranparent-dark"></div>
-						</div>
-
-					</div>
-
-					<div class="card-txt fdc flex aic">
-
-						<img src="assets/images/Designers/cardtThree.svg" class="card-img"  alt="product2">
+						<a href="#"><img src="assets/images/Designers/cardTwo.svg" class="card-img" alt="product2"></a>
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -235,8 +217,27 @@
 					</div>
 
 					<div class="card-txt fdc flex aic">
+						<a href="#"><img src="assets/images/Designers/cardtThree.svg" class="card-img"  alt="product2"></a>
 
-						<img src="assets/images/Designers/cardFour.svg" class="card-img" alt="product2">
+						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<p class="secondary-txt">English Department</p>
+
+						<div class="product-price flex">
+							<p class="product-price-primary">$16.48</p>
+							<p class="product-price-secondary">$6.48</p>
+						</div>
+
+						<div class="flex tranparent-shapes">
+							<div class="tranparent-div tranparent-primary"></div>
+							<div class="tranparent-div tranparent-orang"></div>
+							<div class="tranparent-div tranparent-orang"></div>
+							<div class="tranparent-div tranparent-dark"></div>
+						</div>
+
+					</div>
+
+					<div class="card-txt fdc flex aic">
+						<a href="#"><img src="assets/images/Designers/cardFour.svg" class="card-img" alt="product2"></a>
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -258,29 +259,7 @@
 
 				<div class="cards-container-card flex">
 					<div class="card-txt fdc flex aic">
-
-						<img src="assets/images/Designers/cardFive.svg" class="change-img-1" alt="product2">
-
-						<h4 class="cards-container-card-title">Graphic Design</h4>
-						<p class="secondary-txt">English Department</p>
-
-						<div class="product-price flex">
-							<p class="product-price-primary">$16.48</p>
-							<p class="product-price-secondary">$6.48</p>
-						</div>
-
-						<div class="flex tranparent-shapes">
-							<div class="tranparent-div tranparent-primary"></div>
-							<div class="tranparent-div tranparent-orang"></div>
-							<div class="tranparent-div tranparent-orang"></div>
-							<div class="tranparent-div tranparent-dark"></div>
-						</div>
-
-					</div>
-
-					<div class="card-txt fdc flex aic">
-
-						<img src="assets/images/Designers/cardSixth.svg" class="change-image" alt="product2">
+						<a href="#"><img src="assets/images/Designers/cardFive.svg" class="change-img-1" alt="product2"></a>
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -300,8 +279,7 @@
 					</div>
 
 					<div class="card-txt fdc flex aic">
-
-						<img src="assets/images/Designers/cardSiven.svg" class="change-image" alt="product2">
+						<a href="#"><img src="assets/images/Designers/cardSixth.svg" class="change-image" alt="product2"></a>
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -321,8 +299,27 @@
 					</div>
 
 					<div class="card-txt fdc flex aic">
+						<a href="#"><img src="assets/images/Designers/cardSiven.svg" class="change-image" alt="product2"></a>
 
-						<img src="assets/images/Designers/cardEight.svg" class="change-img" alt="product2">
+						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<p class="secondary-txt">English Department</p>
+
+						<div class="product-price flex">
+							<p class="product-price-primary">$16.48</p>
+							<p class="product-price-secondary">$6.48</p>
+						</div>
+
+						<div class="flex tranparent-shapes">
+							<div class="tranparent-div tranparent-primary"></div>
+							<div class="tranparent-div tranparent-orang"></div>
+							<div class="tranparent-div tranparent-orang"></div>
+							<div class="tranparent-div tranparent-dark"></div>
+						</div>
+
+					</div>
+
+					<div class="card-txt fdc flex aic">
+						<a href="#"><img src="assets/images/Designers/cardEight.svg" class="change-img" alt="product2"></a>
 
 						<h4 class="cards-container-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
@@ -403,9 +400,11 @@
 		<section>
 			<div class="flex cards jcc fdc aic">
 
-				<p class="advice">Practice Advice</p>
-				<h3 class="cards-title">Featured Posts</h3>
-				<p class="cards-description"><span>Problems trying to resolve the conflict between    </span>the two major realms of Classical physics: Newtonian mechanics </p>
+				<div class="cards-info flex fdc">
+					<p class="advice">Practice Advice</p>
+					<h3 class="cards-title">Featured Posts</h3>
+					<p class="cards-description"><span>Problems trying to resolve the conflict between    </span>the two major realms of Classical physics: Newtonian mechanics </p>
+				</div>
 
 				<div class="flex cards-containers">
 					<div class="cards-items">

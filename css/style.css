@@ -120,10 +120,12 @@ p,a {
 	color: #fff;
 }
 
-.header {
+.main-header{
 	padding: 16px 19px 16px 38px;
-	max-width: 1440px;
-	max-width: 100%;
+}
+
+.header {
+	justify-content: space-between;
 	flex-wrap: nowrap;
 	font-size: 0;
 }
@@ -136,12 +138,6 @@ p,a {
 	font-size: var(--medium-size);
 	color: var(--font-color);
 	font-weight: var(--bold);
-}
-
-.brand-logo:hover {
-	font-size: 25px;
-	color: #23856D;
-	font-weight: bolder;
 }
 
 .header-links {
@@ -258,7 +254,6 @@ h1 {
 .card-txt {
 	max-width: 239px;
 	max-width: 100%;
-	padding-block: 20px;
 	transition: all 0.3s ease-in;
 }
 
@@ -360,10 +355,8 @@ a:hover {
 
 .cards-container {
 	gap: 80px;
-	max-width: 1440px;
-	max-width: 100%;
-	padding: 20px;
-	padding-bottom: 80px;
+	max-width: 1050px;
+	padding-block: 80px;
 	margin-inline: auto;
 }
 
@@ -506,8 +499,8 @@ a:hover {
 }
 
 .buying-section {
-	max-width: 1440px;
-	max-width: 100%;
+	max-width: 1050px;
+	margin-inline: auto;
 }
 
 .buying-btn {
@@ -515,23 +508,25 @@ a:hover {
 }
 
 .cards {
-	max-width: 1440px;
-	max-width: 100%;
-	padding-block: 112px;
+	max-width: 1050px;
+	gap: 80px;
+	margin-inline: auto;
+}
 
+.cards-info{
+	align-items: cente;
+	gap: 10px;
 }
 
 .advice {
 	font-size: var(--font-size);
 	color: #23A6F0;
 	font-weight: var(--bold);
-	padding-bottom: 10px;
 }
 
 .cards-title {
 	font-size: var(--medium-size);
 	font-weight: var(--bold);
-	padding-bottom: 10px;
 	color: var(--font-color);
 }
 
@@ -540,7 +535,6 @@ a:hover {
 	font-size: 20px;
 	margin-inline: auto;
 	line-height: 1;
-	padding-bottom: 80px;
 	text-align: center;
 }
 
@@ -662,16 +656,21 @@ a:hover {
 	flex-wrap: nowrap;
 }
 
-.card__collection {
+.categories-container {
 	justify-content: center;
 	gap: 30px;
 }
-.men-card{
+.men-categories{
 	max-width: 551px;
 	object-fit: cover;
+	transition: all 0.3s ease-in;
+
+	&:hover{
+		transform: scale(1.1);
+	}
 }
 
-.card__collection-btn {
+.categories-container-btn {
 	position: absolute;
 	bottom: 26px;
 	left: 31px;
@@ -682,24 +681,38 @@ a:hover {
 	border: 0;
 	font-size: 16px;
 	transition: all 0.3s ease-in;
+
+	&:hover{
+		cursor: pointer;
+		background-color: rgb(144, 144, 144);
+		border-radius: 10px;
+	}
 }
 
-.card__collection-btn:hover {
-	cursor: pointer;
-	background-color: rgb(144, 144, 144);
-}
-
-.women-card {
+.women-categories {
 	object-fit: cover;
+	transition: all 0.3s ease-in;
+
+	&:hover{
+		transform: scale(1.1);
+	}
 }
 
-.women-collection {
+.women-collection-btn {
 	padding: 12px 33px;
 	left: 21px;
 	bottom: 18px;
 }
 
-.card__collection-image {
+.accesories-categories, .kids-categories {
+	transition: all 0.3s ease-in;
+
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+
+.categories-container-image {
 	width: 100%;
 }
 
@@ -708,26 +721,31 @@ a:hover {
 	left: 8px;
 }
 
-.editor-pick {
+.product-categories{
+	background: #fafafa;
 	padding-block: 80px;
-	gap: 48px;
-	background: #D9D9D9;
 }
 
-.editor-pick-heading {
+.categories {
+	gap: 48px;
+	max-width: 1050px;
+	margin-inline: auto;
+}
+
+.categories-heading {
 	font-size: var(--medium-size);
 	font-weight: var(--bold);
 	color: #252B42;
 	padding-bottom: 10px;
 }
 
-.editor-pick-paragraph {
+.categories-paragraph {
 	font-size: var(--font-size);
 	font-weight: var(--header-width-color);
 	line-height: 1.4;
 }
 
-.card__collection-col {
+.categories-col-container {
 	gap: 16px;
 }
 
@@ -805,12 +823,10 @@ a:hover {
 
  .cards-container-text {
 	max-width: 699px;
-	max-width: 100%;
-	padding: 40px;
 	text-align: center;
 }
 
- .editor-pick-info {
+ .categories-info {
 	max-width: 607px;
 	max-width: 100%;
 	text-align: center;
@@ -929,11 +945,11 @@ a:hover {
 		margin-inline: auto;
 	}
 
-	.classic-product-buttons,.cards-container-card,.buying-btn,.card__collection {
+	.classic-product-buttons,.cards-container-card,.buying-btn,.categories-container {
 		flex-direction: column;
 	}
 
-	.txt-w-img-text,.collection-info,.editor-pick {
+	.txt-w-img-text,.collection-info,.categories {
 		text-align: center;
 	}
 
@@ -981,11 +997,11 @@ a:hover {
 		max-width: 100%;
 	}
 
-	.card__collection {
+	.categories-container {
 		align-items: center;
 	}
 
-	.men-card,.women-card,.accesories-card,.kids-card {
+	.men-categories,.women-categories,.accesories-categories,.kids-categories {
 		width: 324px;
 	}
 
@@ -1028,7 +1044,7 @@ a:hover {
 		max-width: 279px;
 	}
 
-	.editor-pick-paragraph {
+	.categories-paragraph {
 		max-width: 196px;
 	}
 

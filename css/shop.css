@@ -1,9 +1,21 @@
 @import '../css/style.css';
 
+.announcement{
+	padding: 19px 34px 15px 34px;
+	background-color:#23856D;
+}
+
+@media (max-width:992px){
+	.announcement{
+		display: none;
+	}
+}
+
 .announcement-bar {
-	padding: 19px 242px 15px 197px;
     justify-content: space-between;
-    background-color:#23856D;
+		max-width: 1042px;
+		margin-inline: auto;
+		background-color:#23856D;
 }
 
 .announcement-bar-txt{
@@ -12,8 +24,9 @@
 }
 
 .header {
-	padding: 26px 203px 27px 197px;
 	justify-content: space-between;
+	max-width: 1040px;
+	margin-inline: auto;
 }
 
 .jcc{
@@ -34,12 +47,22 @@
 	color: #252B42;
 }
 
-.shop-card {
+.shopping-section{
 	background: #FAFAFA;
-	max-width: 1440px;
-	max-width: 100%;
+	padding: 24px 195px;
+}
+
+@media (max-width:992px){
+	.shopping-section{
+		padding: 0 41px;
+	}
+}
+
+.shop-card {
+	max-width: 1050px;
+	margin-inline: auto;
 	display: flex;
-	padding: 30px 176px 48px 176px;
+
 }
 
 .img-container {
@@ -151,17 +174,21 @@
 
 }
 
-.shop-result {
+.selection{
 	padding: 37px 196px;
-	max-width: 1440px;
-	max-width: 100%;
 }
 
-@media (max-width:992px){
-  .shop-result {
-    padding: 24px 80px;
-  }
+@media (max-width:992px) {
+	.selection{
+		padding: 41px;
+	}
 }
+
+.shop-result {
+	max-width: 1050px;
+	margin-inline: auto;
+}
+
 @media (max-width:768px) {
 	.shop-result{
 		flex-direction: column;
@@ -233,12 +260,6 @@
 	gap: 30px;
 }
 
-.cards-container {
-	padding: 48px 196px;
-	max-width: 1440px;
-	max-width: 100%;
-}
-
 @media (max-width:768px) {
 	.cards-container-card {
 		width: 100%;
@@ -251,11 +272,20 @@
 	}
 }
 
-.partners {
-	max-width: 1440px;
-	max-width: 100%;
+.work-with{
 	padding: 66px 196px;
 	background: #FAFAFA;
+}
+
+@media (max-width:992px){
+	.work-with{
+		padding: 41px;
+	}
+}
+
+.partners {
+	max-width: 1050px;
+	margin-inline: auto;
 	gap: 55px;
 	flex-wrap: wrap;
 }
@@ -274,13 +304,31 @@
 	}
 }
 
-.footer-nav {
-	background: #FFF;
+footer{
 	padding: 40px 196px;
 }
 
+@media (max-width:992px) {
+ footer{
+	padding: 41px;
+ }
+}
+
+.footer{
+	gap: 60px;
+	max-width: 1050px;
+	margin-inline: auto;
+}
+
+.footer-nav {
+	background: #FFF;
+	border-bottom: 1px solid #E6E6E6;
+	padding: 0;
+	padding-bottom: 20px;
+}
+
 .footer-nav-container {
-	padding: 40px 196px;
+	padding: 0;
 }
 
 @media (max-width:414px){
