@@ -253,14 +253,22 @@ h1 {
 
 .card-txt {
 	max-width: 239px;
-	max-width: 100%;
-	transition: all 0.3s ease-in;
+	overflow: hidden;
 }
 
-.card-txt:hover {
-	transform: scale(1.1);
-	border-radius: 5px;
-	box-shadow: 0 5px 0 0 #F3F3F3;
+.card-txt-image-div{
+	max-width: 239px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.card-img{
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		transform: scale(1.1);
+	}
 }
 
 .collection-info {
@@ -663,11 +671,7 @@ a:hover {
 .men-categories{
 	max-width: 551px;
 	object-fit: cover;
-	transition: all 0.3s ease-in;
-
-	&:hover{
-		transform: scale(1.1);
-	}
+	overflow: hidden;
 }
 
 .categories-container-btn {
@@ -692,10 +696,7 @@ a:hover {
 .women-categories {
 	object-fit: cover;
 	transition: all 0.3s ease-in;
-
-	&:hover{
-		transform: scale(1.1);
-	}
+	overflow: hidden;
 }
 
 .women-collection-btn {
@@ -705,15 +706,16 @@ a:hover {
 }
 
 .accesories-categories, .kids-categories {
+	overflow: hidden;
+}
+
+.categories-container-image {
+	width: 100%;
 	transition: all 0.3s ease-in;
 
 	&:hover{
 		transform: scale(1.1);
 	}
-}
-
-.categories-container-image {
-	width: 100%;
 }
 
 .accesories-collection {
@@ -999,10 +1001,22 @@ a:hover {
 
 	.categories-container {
 		align-items: center;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.categories-col-container{
+		width: 100%;
+	}
+
+	.product-categories, .cards-container {
+		padding: 41px;
 	}
 
 	.men-categories,.women-categories,.accesories-categories,.kids-categories {
-		width: 324px;
+		width: 100%;
+		max-width: 100%;
+		overflow: hidden;
 	}
 
 	.collection-bg-768 {
@@ -1016,7 +1030,16 @@ a:hover {
 	}
 
 	.cards-container-card {
-		width: 348px;
+		width: 100%
+	}
+
+	.card-txt{
+		max-width: 100%;
+	}
+
+	.card-txt-image-div{
+		max-width: 100%;
+		width: 100%;
 	}
 
 	.header-links {

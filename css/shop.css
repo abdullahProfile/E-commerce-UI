@@ -70,23 +70,22 @@
 	object-fit: cover;
 	overflow: hidden;
 	position: relative;
-	transition: all 0.5s ease-in;
-}
-
-.img-container:hover {
-	transform: scale(1.1);
-	border-radius: 10px;
 }
 
 .img-container img {
 	width: 100%;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		transform: scale(1.1);
+	}
 }
 
 .shop-card-img-info {
 	position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 70px;
+  left: 50px;
 	flex-direction: column;
 	gap: 9.5px;
 }
@@ -133,7 +132,7 @@
   }
 
   .shop-card{
-    padding: 24px 41px;
+    padding: 0;
   }
 
   .cards-container{
@@ -160,12 +159,7 @@
 	}
 
 	.shop-card-header {
-		padding-block: 54px;
 		gap: 54px;
-	}
-
-	.shop-card {
-		padding: 23px 35px;
 	}
 
 	.shop-card-img-info {
