@@ -7,25 +7,21 @@
 }
 
 :root{
-	--primary-heading-font:58px;
-	--secondary-heading-size:40px;
-	--font-size:14px;
-	--medium-size:24px;
+	--primary-heading-font-size:58px;
+	--secondary-heading-font-size:40px;
+	--sm-font-size:14px;
+	--medium-font-size:24px;
 	--font-color:#252B42;
-	--bg-color: #2DC071;
-	--width:16px;
-	--height:16px;
-	--color:#fff;
-	--bold:700;
+	--background-color: #2DC071;
+	--icon-width:16px;
+	--icon-height:16px;
+	--white-color:#fff;
+	--font-weight-bold:700;
 
 }
 
 body {
 	font-family: "Montserrat", sans-serif;
-}
-
-html:focus-within {
-	scroll-behavior: smooth;
 }
 
 .flex {
@@ -62,9 +58,9 @@ html:focus-within {
 }
 
 .icons {
-	width: var(--width);
+	width: var(--icon-width);
 	height: var(--icons-primary-height);
-	fill: var(--color);
+	fill: var(--white-color);
 }
 
 .zero-font-size{
@@ -93,9 +89,9 @@ p,a {
 }
 
 .announcement-bar {
-	color: var(--color);
-	font-size: var(--font-size);
-	font-weight: var(--bold);
+	color: var(--white-color);
+	font-size: var(--sm-font-size);
+	font-weight: var(--font-weight-bold);
 	max-width: 1440px;
 	margin-inline: auto;
 }
@@ -116,7 +112,7 @@ p,a {
 
 .text-primary {
 	font-size: var(--secondary-font-size);
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 }
 
 .universal-color {
@@ -139,9 +135,9 @@ p,a {
 }
 
 .brand-logo {
-	font-size: var(--medium-size);
+	font-size: var(--medium-font-size);
 	color: var(--font-color);
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 }
 
 .header-links {
@@ -223,7 +219,7 @@ ul li a {
 	padding: 15px 18px;
 	max-width: 221px;
 	text-align: center;
-	background-color: var(--bg-color);
+	background-color: var(--background-color);
 	border: 0;
 	border-radius: 5px;
 	cursor: pointer;
@@ -238,8 +234,8 @@ ul li a {
 }
 
 .h1 {
-	font-size: var(--primary-heading-font);
-	font-weight: var(--bold);
+	font-size: var(--primary-heading-font-size);
+	font-weight: var(--font-weight-bold);
 	line-height: .75;
 	width: 565px;
 }
@@ -348,7 +344,7 @@ a:hover {
 
 
 .featured-collection-card-title {
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 	padding-top: 25px;
 	padding-bottom: 10px;
 }
@@ -360,12 +356,12 @@ a:hover {
 
 .product-price-primary {
 	color: #BDBDBD;
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 }
 
 .product-price-secondary {
 	color: #23856D;
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 }
 
 .tranparent-div {
@@ -411,12 +407,12 @@ a:hover {
 }
 
 .featured-collection-heading {
-	font-size: var(--medium-size);
-	font-weight: var(--bold);
+	font-size: var(--medium-font-size);
+	font-weight: var(--font-weight-bold);
 }
 
 .featured-collection-description {
-	font-size: var(--font-size);
+	font-size: var(--sm-font-size);
 	letter-spacing: 0.2px;
 }
 
@@ -439,9 +435,9 @@ a:hover {
 }
 
 .classic-product-title {
-	font-size: var(--primary-heading-font);
-	font-weight: var(--bold);
-	color: var(--color);
+	font-size: var(--primary-heading-font-size);
+	font-weight: var(--font-weight-bold);
+	color: var(--white-color);
 	line-height: 1.37;
 }
 
@@ -453,8 +449,8 @@ a:hover {
 
 .classic-product-description {
 	max-width: 341px;
-	font-size: var(--font-size);
-	color: var(--color);
+	font-size: var(--sm-font-size);
+	color: var(--white-color);
 	line-height: 1.4;
 }
 
@@ -463,9 +459,9 @@ a:hover {
 }
 
 .classic-product-price {
-	font-size: var(--font-size);
-	font-weight: var(--bold);
-	color: var(--color);
+	font-size: var(--sm-font-size);
+	font-weight: var(--font-weight-bold);
+	color: var(--white-color);
 }
 
  @media (max-width:992px) {
@@ -478,42 +474,43 @@ a:hover {
 	top: 330px;
 }
 
-/* .men:hover {
- background-color: #b4b4b4;
-} */
 
 .text-img {
 	max-width: 725px;
 	max-width: 100%;
 }
 
-.txt-w-img-text-session {
+.checkout-container-text-session {
 	color: #BDBDBD;
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 }
 
-.txt-w-img-title {
+.checkout-container-title {
 	color: var(--font-color);
 	font-size: 40px;
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 	max-width: 375px;
 	padding-block: 30px;
 }
 
-.txt-w-img-description {
+.checkout-container-description {
 	max-width: 383px;
 	font-size: 20px;
 	padding-bottom: 30px;
 	line-height: 1.5;
 }
 
+.checkout-heading {
+	color: #BDBDBD !important;
+}
+
 @media (max-width:768px) {
-	.txt-w-img-title{
+	.checkout-container-title{
 		max-width: 230px;
     margin-inline: auto;
 	}
 
-	.txt-w-img-description {
+	.checkout-container-description {
 		max-width: 231px;
 	}
 }
@@ -522,8 +519,8 @@ a:hover {
 .read-me-btn {
 	background: none;
 	color: #2DC071;
-	font-size: var(--font-size);
-	font-weight: var(--bold);
+	font-size: var(--sm-font-size);
+	font-weight: var(--font-weight-bold);
 	border: 1px solid currentColor;
 	transition: all 0.3s ease-in;
 }
@@ -534,11 +531,8 @@ a:hover {
 	transform: scale(1.1);
 }
 
-.txt-w-img {
+.checkout-container {
 	gap: 60px;
-}
-
-.buying-section {
 	max-width: 1050px;
 	margin-inline: auto;
 }
@@ -560,14 +554,14 @@ a:hover {
 }
 
 .advice {
-	font-size: var(--font-size);
+	font-size: var(--sm-font-size);
 	color: #23A6F0;
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 }
 
 .new-collection-title {
-	font-size: var(--medium-size);
-	font-weight: var(--bold);
+	font-size: var(--medium-font-size);
+	font-weight: var(--font-weight-bold);
 	color: var(--font-color);
 }
 
@@ -616,7 +610,7 @@ a:hover {
 
 .new-collection-description-details-text {
 	max-width: 280px;
-	font-size: var(--font-size);
+	font-size: var(--sm-font-size);
 	line-height: 20px;
 	font-weight: 400;
 }
@@ -658,13 +652,13 @@ a:hover {
 }
 
 .new-product {
-	color: var(--color);
+	color: var(--white-color);
 	background-color: #E74040;
 	padding: 5px 10px 5px 10px;
 	position: absolute;
 	top: 20px;
 	left: 20px;
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 	border-radius: 5px;
 	font-size: 20px;
 }
@@ -702,8 +696,8 @@ a:hover {
 	left: 31px;
 	text-transform: uppercase;
 	padding: 12px 66px;
-	background-color: var(--color);
-	font-weight: var(--bold);
+	background-color: var(--white-color);
+	font-weight: var(--font-weight-bold);
 	border: 0;
 	font-size: 16px;
 
@@ -757,13 +751,13 @@ a:hover {
 }
 
 .categories-heading {
-	font-size: var(--medium-size);
-	font-weight: var(--bold);
+	font-size: var(--medium-font-size);
+	font-weight: var(--font-weight-bold);
 	color: #252B42;
 }
 
 .categories-paragraph {
-	font-size: var(--font-size);
+	font-size: var(--sm-font-size);
 	font-weight: var(--header-width-color);
 	line-height: 1.4;
 }
@@ -785,7 +779,6 @@ a:hover {
 	gap: 30px;
 	flex-wrap: wrap;
 	max-width: 1050px;
-	margin-inline: auto;
 	padding: 50px 0;
 }
 
@@ -805,8 +798,8 @@ a:hover {
 
 .Subscirbe-btn {
 	background: #23A6F0;
-	color: var(--color);
-	font-size: var(--font-size);
+	color: var(--white-color);
+	font-size: var(--sm-font-size);
 	position: absolute;
 	right: 0;
 	top: 64px;
@@ -840,18 +833,18 @@ a:hover {
 
 .footer-heading {
 	color: #252B42;
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 	padding-bottom: 10px;
 	font-size: 20px;
 	padding-bottom: 20px;
 }
 
  .footer-nav-container ul a {
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 }
 
  .cp-R {
-	font-weight: var(--bold);
+	font-weight: var(--font-weight-bold);
 	padding: 25px 195px;
 	background: #FAFAFA;
 }
@@ -875,8 +868,8 @@ a:hover {
 }
 
 .h5{
-	font-weight: var(--bold);
-	color: var(--color);
+	font-weight: var(--font-weight-bold);
+	color: var(--white-color);
 	font-size: 16px;
 }
 
@@ -897,7 +890,7 @@ a:hover {
 .slider-btn {
 	width: 62px;
 	height: 10px;
-	background-color: var(--color);
+	background-color: var(--white-color);
 	border: none;
 	cursor: pointer;
 	transition: background-color 0.3s;
@@ -917,13 +910,13 @@ a:hover {
 	color: #737373;
 }
 
-.txt-w-img-txt {
+.checkout-container-txt {
 	color: #BDBDBD;
 }
 
 .buy-btn{
-	font-size: var(--font-size);
-	font-weight: var(--bold);
+	font-size: var(--sm-font-size);
+	font-weight: var(--font-weight-bold);
 	text-transform: uppercase;
 	color: #FFF !important;
 	padding: 15px 40px;
@@ -945,7 +938,7 @@ a:hover {
 	}
 }
 
-@media (max-width:7768px) {
+@media (max-width:768px) {
 	.buy-btn {
 		background-color: #23A6F0;
 		max-width: 151px;
@@ -991,13 +984,17 @@ a:hover {
 	}
 }
 
+.details-arrow{
+	width: 10px;
+}
+
 @media (max-width:1040px) {
 	.featured-collection-card {
 		justify-content: center;
 		flex-wrap: wrap;
 	}
 
-	.txt-w-img {
+	.checkout-container {
 		flex-direction: column-reverse;
 		padding-top: 120px;
 	}
@@ -1030,12 +1027,8 @@ a:hover {
 		flex-direction: column;
 	}
 
-	.txt-w-img-text,.collection-info,.categories {
+	.checkout-container-text,.collection-info,.categories {
 		text-align: center;
-	}
-
-	.buying-section {
-		padding: 9px;
 	}
 
 	.new-collection {
@@ -1154,7 +1147,7 @@ a:hover {
 	.classic-collection-btn {
 		width: 171px;
 		padding: 15px;
-		font-size: var(--font-size);
+		font-size: var(--sm-font-size);
 	}
 
 	.classic-product-arrow {

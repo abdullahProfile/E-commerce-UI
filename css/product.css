@@ -22,14 +22,16 @@
 	gap: 20px;
 }
 
+.review-section{
+	padding: 24px 0;
+	background: #FAFAFA;
+}
 .review{
 	display: flex;
 	gap: 34px;
 	flex-direction: column;
-	max-width: 1440px;
-	max-width: 100%;
-	background: #FAFAFA;
-	padding: 24px 195px;
+	max-width: 1050px;
+	margin-inline: auto;
 }
 
 .swiper-w-text{
@@ -65,6 +67,7 @@
     color: #252B42;
     line-height: .75;
     letter-spacing: .1px;
+	padding: 0;
 }
 
 .product-stock{
@@ -167,25 +170,29 @@
 }
 
 .faq-container-img{
-	max-width: 316px;
+	max-width: 337px;
+	box-shadow: 12px 5px 5px #C4C4C4;
+	border-radius: 5px
 }
 
 .faq-container-img img{
 	width: 100%;
+	height: 100%;
 	object-fit: cover;
+	border-radius: 5px;
 }
 
 .faq-container-txt{
 	max-width: 332px;
+	gap: 25px;
 }
 
 .faq-container-txt p {
 	font-size: 14px;
 	line-height: 20px;
-	padding-block: 14px;
 }
 
-.faq-container-txt-heading{
+.faq-title{
 	font-size: 24px;
 	font-weight: bold;
 	color: #252B42;
@@ -201,14 +208,6 @@
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}
-
-.faq-question-info{
-	font-weight: 700;
-}
-
-.faq-question{
-	gap: 10px;
 }
 
 .faq-container-secondary {
@@ -232,10 +231,6 @@
 		flex-direction: column;
 	}
 
-	.announcement-bar{
-		display: none;
-	}
-
 	.swiper{
 		max-width: 700px !important;
 	}
@@ -247,21 +242,29 @@
 	}
 }
 
-.questions{
+.faq-question{
 	gap: 25px;
+	max-width: 332px;
 }
 
 .faq-question-container{
 	gap: 10px;
+	width: 332px;
 }
 
-.card-txt{
+.faq-question-info {
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.card-txt {
 	background: #FFFFFF;
 	padding-block: 0;
 }
 
-.featured-collection {
+.featured {
 	background: #FAFAFA;
+	padding: 40px 0;
 }
 
 @media (max-width:992px){
@@ -276,4 +279,38 @@
 	.faq-nav{
 		gap: 5px;
 	}
+}
+
+.featured-collection-info{
+	gap: 10px;
+	padding: 25px 35px;
+}
+
+.featured-collection-card-title{
+	padding: 0;
+}
+
+.featured-collection {
+	margin-block: 0;
+}
+
+.product-price-primary{
+	font-size: 16px;
+}
+
+.product-price-secondary{
+	font-size: 16px;
+}
+
+.featured-collection-title {
+	font-size: 24px;
+	color: #252B42;
+	font-weight: var(--font-weight-bold);
+	border-bottom: 1px solid #ECECEC;
+	padding-bottom: 24px;
+}
+
+.partners{
+	margin-inline: 0;
+	justify-content: space-around;
 }

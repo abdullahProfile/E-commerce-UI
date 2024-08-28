@@ -316,6 +316,7 @@ footer{
 	border-bottom: 1px solid #E6E6E6;
 	padding: 0;
 	padding-bottom: 20px;
+	justify-content: space-between;
 }
 
 .footer-nav-container {
@@ -324,7 +325,7 @@ footer{
 
 @media (max-width:414px){
 	.Subscirbe-btn {
-		right: -55px;
+	right: -55px;
 	}
 }
 
@@ -377,21 +378,11 @@ footer{
  	border-bottom-right-radius: 5px;
 }
 
-.next:hover {
-	background-color: #000;
-	color: #FFF;
-}
-
 .back {
 	background: #F3F3F3;
 	color: #BDBDBD;
 	border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-}
-
-.back:hover {
-	background: #000;
-	color: #FFF;
 }
 
 .shopping-logo {
