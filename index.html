@@ -10,42 +10,44 @@
 </head>
 <body>
 
-	<div class="announcement-bar flex jcb aic">
-
-		<div class="flex aic spacing-wrapper zero-font-size">
-			<div class="flex aic icon-wrapper">
-				<a href="#"><img src="assets/icons/phone.svg" class="icons phone-icon" alt="icon"></a>
-				<p class="universal-color secondary-txt">(225) 555-0118</p>
+	<section class="announcement">
+		<div class="announcement-bar flex jcb align-items-center">
+	
+			<div class="flex align-items-center spacing-wrapper zero-font-size">
+				<div class="flex align-items-center icon-wrapper">
+					<a href="#"><img src="assets/icons/phone.svg" class="icons phone-icon" alt="icon"></a>
+					<p class="universal-color secondary-txt">(225) 555-0118</p>
+				</div>
+	
+				<div class="flex align-items-center icon-wrapper">
+					<a href="#"><img src="assets/icons/gmail.svg" class="icons" alt="icon"></a>
+					<p class="universal-color secondary-txt">michelle.rivera@example.com</p>
+				</div>
 			</div>
-
-			<div class="flex aic icon-wrapper">
-				<a href="#"><img src="assets/icons/gmail.svg" class="icons" alt="icon"></a>
-				<p class="universal-color secondary-txt">michelle.rivera@example.com</p>
-			</div>
+	
+			<p class="secondary-txt universal-color">Follow Us  and get a chance to win 80% off</p>
+	
+				<div class="flex align-items-center social-links zero-font-size">
+					<p class="secondary-txt universal-color">Follow Us  :</p>
+	
+						<a href="#">
+							<img src="assets/icons/instagram.svg" class="icons" alt="">
+						</a>
+	
+						<a href="#"><img src="assets/icons/youtube.svg" class="icons" alt="icons"></a>
+						<a href="#"><img src="assets/icons/facebook.svg" class="icons" alt="icons"></a>
+						<a href="#"><img src="assets/icons/twitter.svg" alt="icons"></a>
+				</div>
+	
 		</div>
-
-		<p class="secondary-txt universal-color">Follow Us  and get a chance to win 80% off</p>
-
-			<div class="flex aic social-links zero-font-size">
-				<p class="secondary-txt universal-color">Follow Us  :</p>
-
-					<a href="#">
-						<img src="assets/icons/instagram.svg" class="icons" alt="">
-					</a>
-
-					<a href="#"><img src="assets/icons/youtube.svg" class="icons" alt="icons"></a>
-					<a href="#"><img src="assets/icons/facebook.svg" class="icons" alt="icons"></a>
-					<a href="#"><img src="assets/icons/twitter.svg" alt="icons"></a>
-			</div>
-
-	</div>
+	</section>
 
 	 <header class="main-header">
 		<div class="flex header jcb">
-				<div class="flex aic header-links">
-					<a href="#" class="anchor-links"><p class="brand-logo">Bandage</p></a>
+				<div class="flex align-items-center header-links">
+					<a href="#" class="anchor-links brand-logo">Bandage</a>
 
-					<ul id="list" class="flex list-style nav-links aic secondary-txt ul-li">
+					<ul id="list" class="flex list-style nav-links align-items-center secondary-txt ul-li">
 						<li><a href="#">Home</a></li>
 						<li><a href="pages/shop.html">Shop</a></li>
 						<li><a href="#">About</a></li>
@@ -56,9 +58,9 @@
 
 				</div>
 
-				<div class="flex spacing-wrapper aic">
+				<div class="flex spacing-wrapper align-items-center">
 
-					<div class="flex aic header-icons nav-item-hide">
+					<div class="flex align-items-center header-icons nav-item-hide">
 						<a href="#"><img src="assets/icons/login.svg" alt="login"></a>
 						<a href="#" class="header-text secondary-txt anchor-links">Login / Register</a>
 					</div>
@@ -66,12 +68,12 @@
 					<img src="assets/icons/search.svg" alt="search">
 					</a>
 
-					<div class="flex aic">
+					<div class="flex align-items-center">
 						<a href="#"><img src="assets/icons/addTocart.svg" alt="add to cart"></a></a>
 						<p class="header-text counter">1</p>
 					</div>
 
-					<div class="flex aic nav-item-hide">
+					<div class="flex align-items-center nav-item-hide">
 						<a href="#"><img src="assets/icons/heart.svg" alt="heart"></a>
 						<p class="header-text counter">1</p>
 					</div>
@@ -88,40 +90,48 @@
 
 	 <main>
 		<section>
-			<div class="collection relative">
+			<div class="collection">
 
-				<div>
-					<div class="swiper mySwiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="assets/slider/homePageSlider.svg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="assets/slider/homePageSliderTwo.svg" />
-							</div>
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="assets/slider/collection-slider.png"/>
+
+							<div class="collection-info flex flex-direction-col">
+								<h5 class="h5">SUMMER 2020</h5>
+								<h1 class="universal-color h1">NEW COLLECTION</h1>
+								<p class="collection-info__text">We know how large objects will act, but things on a small scale.</p>
+
+								<a href="pages/shop.html" class="primary-btn universal-color text-primary transform-capitalize anchor-links" target="_parent">Shop Now</a>
 						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="assets/slider/collection-slider-two.png"/>
+
+							<div class="collection-info flex flex-direction-col">
+								<h5 class="h5">SUMMER 2020</h5>
+								<h1 class="universal-color h1">NEW COLLECTION</h1>
+								<p class="collection-info__text">We know how large objects will act, but things on a small scale.</p>
+
+								<a href="pages/shop.html" class="primary-btn universal-color text-primary transform-capitalize anchor-links" target="_parent">Shop Now</a>
+						</div>
+						</div>
 					</div>
-		
+
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
 				</div>
 
-				<div class="collection-info">
-						<h5 class="h5">SUMMER 2020</h5>
-						<h1 class="universal-color">NEW COLLECTION</h1>
-						<p class="collection-info__text">We know how large objects will act, but things on a small scale.</p>
-
-						<a href="pages/shop.html" class="primary-btn universal-color text-primary transform-capitalize anchor-links" target="_parent">Shop Now</a>
-				</div>
 			</div>
 		</section>
 
 
 		<section class="product-categories">
-			<div class="flex categories aic fdc">
+			<div class="flex categories align-items-center flex-direction-col">
 
-				<div class="categories-info">
+				<div class="categories-info flex flex-direction-col">
 					<h3 class="categories-heading transform-capitalize">EDITOR’S PICK</h3>
 					<p class="categories-paragraph">Problems trying to resolve the conflict between </p>
 				</div>
@@ -129,7 +139,7 @@
 				<div class="categories-container flex">
 					<div class="men-categories relative">
 						<a href="#">
-							<img src="assets/images/editors/men.svg" class="categories-container-image" alt="men">
+							<img src="assets/images/editors/men.png" class="categories-container-image" alt="men">
 						</a>
 						<button class="categories-container-btn">men</button>
 				</div>
@@ -138,22 +148,23 @@
 						<a href="#">
 							<img src="assets/images/editors/women.svg" class="categories-container-image" alt="">
 						</a>
+
 						<button class="categories-container-btn women-collection-btn">women</button>
 					</div>
 
-					<div class="categories-col-container fdc flex">
+					<div class="categories-col-container flex-direction-col flex">
 						<div class="relative accesories-categories">
 							<a href="#">
-								<img src="assets/images/editors/acce.svg" class="categories-container-image"  alt="">
+								<img src="assets/images/editors/acces.png" class="categories-container-image"  alt="">
 							</a>
-							<button class="categories-container-btn transform-capitalize accesories-collection">accesories</button>
+							<button class="categories-container-btn transform-capitalize accesories-btn">accesories</button>
 						</div>
 
 						<div class="kids-categories relative">
 							<a href="#">
-								<img src="assets/images/editors/kids.svg" class="categories-container-image"  alt="">
+								<img src="assets/images/editors/kids.png" class="categories-container-image"  alt="">
 							</a>
-							<button class="categories-container-btn transform-capitalize accesories-collection">kids</button>
+							<button class="categories-container-btn transform-capitalize kids-btn">kids</button>
 						</div>
 
 					</div>
@@ -163,22 +174,22 @@
 
 		<section>
 
-			<div class="cards-container fdc flex aic">
-				<div class="cards-container-text">
-					<p class="cards-container-title">Featured Products</p>
-					<h4 class="cards-container-heading text-primary transform-capitalize">BESTSELLER PRODUCTS</h4>
-					<p class="cards-container-description">Problems trying to resolve the conflict between </p>
+			<div class="featured-collection flex-direction-col flex align-items-center">
+				<div class="featured-collection-text flex flex-direction-col">
+					<p class="featured-collection-title">Featured Products</p>
+					<h4 class="featured-collection-heading text-primary transform-capitalize">BESTSELLER PRODUCTS</h4>
+					<p class="featured-collection-description">Problems trying to resolve the conflict between </p>
 				</div>
 
-				<div class="cards-container-card flex">
-					<div class="card-txt fdc flex aic">
+				<div class="featured-collection-card flex">
+					<div class="card-txt flex-direction-col flex align-items-center">
 
 						<div class="card-txt-image-div">
 							<a href="#"><img src="assets/images/Designers/cardOne.svg" class="card-img" alt="product2"></a>
 						</div>
 
 						<div>
-							<h4 class="cards-container-card-title">Graphic Design</h4>
+							<h4 class="featured-collection-card-title">Graphic Design</h4>
 							<p class="secondary-txt">English Department</p>
 	
 							<div class="product-price flex">
@@ -195,12 +206,12 @@
 						</div>
 					</div>
 
-					<div class="card-txt fdc flex aic">
+					<div class="card-txt flex-direction-col flex align-items-center">
 						<div class="card-txt-image-div">
 							<a href="#"><img src="assets/images/Designers/cardTwo.svg" class="card-img" alt="product2"></a>
 						</div>
 
-						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<h4 class="featured-collection-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
 
 						<div class="product-price flex">
@@ -217,12 +228,12 @@
 
 					</div>
 
-					<div class="card-txt fdc flex aic">
+					<div class="card-txt flex-direction-col flex align-items-center">
 						<div class="card-txt-image-div">
 							<a href="#"><img src="assets/images/Designers/cardtThree.svg" class="card-img"  alt="product2"></a>
 						</div>
 
-						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<h4 class="featured-collection-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
 
 						<div class="product-price flex">
@@ -239,12 +250,12 @@
 
 					</div>
 
-					<div class="card-txt fdc flex aic">
+					<div class="card-txt flex-direction-col flex align-items-center">
 						<div class="card-txt-image-div">
 							<a href="#"><img src="assets/images/Designers/cardFour.svg" class="card-img" alt="product2"></a>
 						</div>
 
-						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<h4 class="featured-collection-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
 
 						<div class="product-price flex">
@@ -262,14 +273,14 @@
 
 				</div>
 
-				<div class="cards-container-card flex">
-					<div class="card-txt fdc flex aic">
+				<div class="featured-collection-card flex">
+					<div class="card-txt flex-direction-col flex align-items-center">
 
 						<div class="card-txt-image-div">
 							<a href="#"><img src="assets/images/Designers/cardFive.svg" class="change-img-1 card-img" alt="product2"></a>
 						</div>
 
-						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<h4 class="featured-collection-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
 
 						<div class="product-price flex">
@@ -285,13 +296,13 @@
 
 					</div>
 
-					<div class="card-txt fdc flex aic">
+					<div class="card-txt flex-direction-col flex align-items-center">
 
 						<div class="card-txt-image-div">
 							<a href="#"><img src="assets/images/Designers/cardSixth.svg" class="change-image card-img" alt="product2"></a>
 						</div>
 
-						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<h4 class="featured-collection-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
 
 						<div class="product-price flex">
@@ -307,13 +318,13 @@
 						</div>
 					</div>
 
-					<div class="card-txt fdc flex aic">
+					<div class="card-txt flex-direction-col flex align-items-center">
 
 						<div class="card-txt-image-div">
 							<a href="#"><img src="assets/images/Designers/cardSiven.svg" class="change-image card-img" alt="product2"></a>
 						</div>
 
-						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<h4 class="featured-collection-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
 
 						<div class="product-price flex">
@@ -330,13 +341,13 @@
 
 					</div>
 
-					<div class="card-txt fdc flex aic">
+					<div class="card-txt flex-direction-col flex align-items-center">
 
 						<div class="card-txt-image-div">
 							<a href="#"><img src="assets/images/Designers/cardEight.svg" class="change-img card-img" alt="product2"></a>
 						</div>
 
-						<h4 class="cards-container-card-title">Graphic Design</h4>
+						<h4 class="featured-collection-card-title">Graphic Design</h4>
 						<p class="secondary-txt">English Department</p>
 
 						<div class="product-price flex">
@@ -372,13 +383,13 @@
 					</svg>
 
 
-				<div class="classic-product-content flex jcc flex-wrap aic">
+				<div class="classic-product-content flex jcc flex-wrap align-items-center">
 
-					<div class="classic-product-text flex fdc">
+					<div class="classic-product-text flex flex-direction-col">
 						<h5 class="h5">SUMMER 2020</h5>
 						<h2 class="classic-product-title">Vita Classic Product</h2>
 						<p class="classic-product-description">We know how large objects will act, We know how are objects will act, We know</p>
-						<div class="classic-product-buttons flex aic">
+						<div class="classic-product-buttons flex align-items-center">
 							<p class="classic-product-price">$16.48</p>
 							<button class="primary-btn universal-color text-primary transform-capitalize classic-collection-btn">add to chart</button>
 						</div>
@@ -394,7 +405,7 @@
 		<section>
 			<div class="buying-section jcc flex">
 
-				<div class="txt-w-img flex aic">
+				<div class="txt-w-img flex align-items-center">
 					<img src="assets/images/Designers/buy.svg" class="text-img" alt="asian women" loading="lazy">
 
 					<div class="txt-w-img-text">
@@ -413,158 +424,153 @@
 		</section>
 
 		<section>
-			<div class="flex cards jcc fdc aic">
+			<div class="new-collection flex  jcc flex-direction-col align-items-center">
 
-				<div class="cards-info flex fdc">
+				<div class="new-collection-info flex flex-direction-col">
 					<p class="advice">Practice Advice</p>
-					<h3 class="cards-title">Featured Posts</h3>
-					<p class="cards-description"><span>Problems trying to resolve the conflict between    </span>the two major realms of Classical physics: Newtonian mechanics </p>
+					<h3 class="new-collection-title">Featured Posts</h3>
+					<p class="new-collection-description"><span>Problems trying to resolve the conflict between    </span>the two major realms of Classical physics: Newtonian mechanics </p>
 				</div>
 
-				<div class="flex cards-containers">
-					<div class="cards-items">
+				<div class="flex featured-collections">
 
-						<div class="cards-items-description">
-							<div class="cards-description-picture responsive1-768"><img src="assets/images/newProduct/newCard.svg" class="cards-img" alt="post" loading="lazy"></div>
+						<div class="new-collection-items-description relative">
+							<div class="new-collection-description-picture responsive1-768"><img src="assets/images/newProduct/newCard.svg" class="new-collection-img" alt="post" loading="lazy"></div>
 
-							<div class="cards-description-details">
-								<ul class="cards-items-list flex">
+							<div class="new-collection-description-details">
+								<ul class="new-collection-items-list flex">
 									<li><a href="#" class="google-link">Google</a></li>
 									<li><a href="#">Trading</a></li>
 									<li><a href="#">New</a></li>
 								</ul>
 
-								<h4 class="cards-description-details-heading">Loudest à la Madison #1 (L'integral)</h4>
-								<p class="cards-description-details-text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+								<h4 class="new-collection-description-details-heading">Loudest à la Madison #1 (L'integral)</h4>
+								<p class="new-collection-description-details-text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
 
-								<div class="flex post-announcment aic jcb">
-									<div class="timer flex aic">
+								<div class="flex post-announcment align-items-center jcb">
+									<div class="timer flex align-items-center">
 										<img src="assets/images/newProduct/timer.svg" class="post-img" alt="timer-marker">
 										<p class="post-txt">22 April 2021</p>
 									</div>
-									<div class="trading flex aic">
+									<div class="trading flex align-items-center">
 										<img src="assets/images/newProduct/comment.svg" class="post-img" alt="trade">
 										<p class="post-txt">10 comments</p>
 									</div>
 								</div>
 
-								<div class="flex more-details-link aic">
+								<div class="flex more-details-link align-items-center">
 									<a href="#">Learn more</a>
 									<a href=""><img src="assets/images/newProduct/newArrow.svg" class="details-arrow" alt="arrow"></a>
 								</div>
 
 							</div>
+							<p class="new-product">New</p>
 					</div>
-					<p class="new-product">New</p>
-				</div>
 
-				<div class="cards-items">
+					<div class="new-collection-items-description relative">
+						<div class="new-collection-description-picture responsive2-768"><img src="assets/images/newProduct/newCardOne.svg" class="new-collection-img" alt="post" loading="lazy"></div>
 
-					<div class="cards-items-description">
-						<div class="cards-description-picture responsive2-768"><img src="assets/images/newProduct/newCardOne.svg" class="cards-img" alt="post" loading="lazy"></div>
-
-						<div class="cards-description-details">
-							<ul class="cards-items-list flex">
+						<div class="new-collection-description-details">
+							<ul class="new-collection-items-list flex">
 								<li><a href="#" class="google-link">Google</a></li>
 								<li><a href="#">Trading</a></li>
 								<li><a href="#">New</a></li>
 							</ul>
 
-							<h4 class="cards-description-details-heading">Loudest à la Madison #1 (L'integral)</h4>
-							<p class="cards-description-details-text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+							<h4 class="new-collection-description-details-heading">Loudest à la Madison #1 (L'integral)</h4>
+							<p class="new-collection-description-details-text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
 
-							<div class="flex post-announcment aic jcb">
-								<div class="timer flex aic">
+							<div class="flex post-announcment align-items-center jcb">
+								<div class="timer flex align-items-center">
 									<img src="assets/images/newProduct/timer.svg" class="post-img" alt="timer-marker">
 									<p class="post-txt">22 April 2021</p>
 								</div>
 
-								<div class="trading flex aic">
+								<div class="trading flex align-items-center">
 									<img src="assets/images/newProduct/comment.svg" class="post-img" alt="trade">
 									<p class="post-txt">10 comments</p>
 								</div>
 
 							</div>
 
-							<div class="flex more-details-link aic">
+							<div class="flex more-details-link align-items-center">
 								<a href="#">Learn more</a>
 								<a href=""><img src="assets/images/newProduct/newArrow.svg" class="details-arrow" alt="arrow"></a>
 							</div>
 						</div>
 
+						<p class="new-product">New</p>
 				</div>
-				<p class="new-product">New</p>
-			</div>
 
-				<div class="cards-items">
+					<div class="new-collection-items-description relative">
+						<div class="new-collection-description-picture responsive3-768"><img src="assets/images/newProduct/newCardTwo.svg" class="new-collection-img" alt="post" loading="lazy"></div>
 
-					<div class="cards-items-description">
-						<div class="cards-description-picture responsive3-768"><img src="assets/images/newProduct/newCardTwo.svg" class="cards-img" alt="post" loading="lazy"></div>
-
-						<div class="cards-description-details">
-							<ul class="cards-items-list flex">
+						<div class="new-collection-description-details">
+							<ul class="new-collection-items-list flex">
 								<li><a href="#" class="google-link">Google</a></li>
 								<li><a href="#">Trading</a></li>
 								<li><a href="#">New</a></li>
 							</ul>
 
-							<h4 class="cards-description-details-heading">Loudest à la Madison #1 (L'integral)</h4>
-							<p class="cards-description-details-text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+							<h4 class="new-collection-description-details-heading">Loudest à la Madison #1 (L'integral)</h4>
+							<p class="new-collection-description-details-text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
 
-							<div class="flex post-announcment aic jcb">
-								<div class="timer flex aic">
+							<div class="flex post-announcment align-items-center jcb">
+								<div class="timer flex align-items-center">
 									<img src="assets/images/newProduct/timer.svg" class="post-img" alt="timer-marker">
 									<p class="post-txt">22 April 2021</p>
 								</div>
-								<div class="trading flex aic">
+								<div class="trading flex align-items-center">
 									<img src="assets/images/newProduct/comment.svg" class="post-img" alt="trade">
 									<p class="post-txt">10 comments</p>
 								</div>
 							</div>
 
-								<div class="flex more-details-link aic">
+								<div class="flex more-details-link align-items-center">
 									<a href="#">Learn more</a>
 									<a href=""><img src="assets/images/newProduct/newArrow.svg" class="details-arrow" alt="arrow"></a>
 								</div>
 
 							</div>
+							<p class="new-product">New</p>
 						</div>
-				<p class="new-product">New</p>
-				</div>
 				</div>
 			</div>
 
 		</section>
 
-		<footer>
-			<div class="footer">
-				<div class="flex footer-nav aic">
-					<a href="#" class="anchor-links"><p class="brand-logo">Bandage</p></a>
-					<div class="flex footer-link-list aic">
+		<section class="brand-info">
 
-						<a href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer-icons">
-							<path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
-							</svg>
-						</a>
+			<div class="flex brand-info-container align-items-center">
+				<a href="#" class="anchor-links"><p class="brand-logo">Bandage</p></a>
+				<div class="flex footer-link-list align-items-center">
 
-						<a href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="footer-icons">
-								<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-							</svg>
-						</a>
-						<a href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer-icons">
-								<path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/>
-							</svg>
-						</a>
-					</div>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer-icons">
+						<path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
+						</svg>
+					</a>
+
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="footer-icons">
+							<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+						</svg>
+					</a>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer-icons">
+							<path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/>
+						</svg>
+					</a>
 				</div>
+			</div>
+		</section>
+
+		<footer>
 
 				<div class="flex footer-nav-container jcb">
 					<div>
 						<p class="footer-heading">About us</p>
-						<ul class="flex footer-nav__anchor fdc list-style">
+						<ul class="flex footer-nav__anchor flex-direction-col list-style">
 							<li><a href="#">About Us</a></li>
 							<li><a href="#">Carrirs</a></li>
 							<li><a href="#">We are hiring</a></li>
@@ -574,7 +580,7 @@
 
 					<div>
 						<p class="footer-heading">Legal</p>
-						<ul class=" flex footer-nav__anchor fdc list-style">
+						<ul class=" flex footer-nav__anchor flex-direction-col list-style">
 							<li><a href="#">About Us</a></li>
 							<li><a href="#">Carrirs</a></li>
 							<li><a href="#">We are hiring</a></li>
@@ -584,7 +590,7 @@
 
 					<div>
 						<p class="footer-heading">Features</p>
-						<ul class="flex footer-nav__anchor fdc list-style">
+						<ul class="flex footer-nav__anchor flex-direction-col list-style">
 							<li><a href="#">Business Marketing</a></li>
 							<li><a href="#">User Analytic</a></li>
 							<li><a href="#">Live Chat</a></li>
@@ -594,7 +600,7 @@
 
 					<div>
 						<p class="footer-heading">Resources</p>
-						<ul class="flex footer-nav__anchor fdc list-style">
+						<ul class="flex footer-nav__anchor flex-direction-col list-style">
 							<li><a href="#">IOS & Android</a></li>
 							<li><a href="#">Watch a Demo</a></li>
 							<li><a href="#">Customers</a></li>
@@ -602,7 +608,7 @@
 						</ul>
 					</div>
 
-					<div class="flex footer-nav__anchor fdc relative">
+					<div class="flex footer-nav__anchor flex-direction-col relative">
 						<p class="footer-heading">Get In Touch</p>
 							<input type="email" name="" id="" placeholder="Your Email" class="input">
 							<butto class="Subscirbe-btn">Subscirbe</butto>
@@ -611,8 +617,7 @@
 
 				</div>
 
-				<p class="cp-R">Made With Love By Finland All Right Reserved </p>
-			</div>
+			<p class="cp-R">Made With Love By Finland All Right Reserved </p>
 		</footer>
 	</main>
 	<script src="js/script.js">

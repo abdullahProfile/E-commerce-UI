@@ -1,7 +1,6 @@
 @import '../css/style.css';
 
 .announcement{
-	padding: 19px 34px 15px 34px;
 	background-color:#23856D;
 }
 
@@ -12,10 +11,8 @@
 }
 
 .announcement-bar {
-    justify-content: space-between;
 		max-width: 1042px;
 		margin-inline: auto;
-		background-color:#23856D;
 }
 
 .announcement-bar-txt{
@@ -135,11 +132,11 @@
     padding: 0;
   }
 
-  .cards-container{
+  .featured-collection{
     padding: 24px 41px;
   }
 
-  .cards-container-card{
+  .featured-collection-card{
     justify-content: space-around;
   }
 
@@ -247,7 +244,7 @@
 	cursor: pointer;
 }
 
-.cards-container-card {
+.featured-collection-card {
 	width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -255,13 +252,13 @@
 }
 
 @media (max-width:768px) {
-	.cards-container-card {
+	.featured-collection-card {
 		width: 100%;
 		justify-content: space-around;
     justify-content: center;
 	}
 
-	.cards-container {
+	.featured-collection {
 		padding: 24px 35px;
 	}
 }

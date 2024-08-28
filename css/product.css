@@ -260,12 +260,12 @@
 	padding-block: 0;
 }
 
-.cards-container {
+.featured-collection {
 	background: #FAFAFA;
 }
 
 @media (max-width:992px){
-	.cards-container-card {
+	.featured-collection-card {
 		align-items: center;
 	}
 
