@@ -6,7 +6,7 @@
 	display: none;
 }
 
-.member-ship-link{
+.header-nav{
 	font-size: 14px;
 	text-decoration: none;
 	color: #23A6F0;
@@ -19,11 +19,12 @@
 	gap: 45px;
 }
 
-.become-member{
+.member-link{
 	padding: 15px 25px;
 	background-color: #23A6F0;
 	color: #fff;
 	border-radius: 5px;
+	gap: 5px;
 	transition: all 0.3s ease-in;
 
 	&:hover{
@@ -42,7 +43,7 @@
 	position: absolute;
 }
 
-.primary-div{
+.large-shape{
 	width: 484px;
 	height: 484px;
 	right: 58px;
@@ -50,17 +51,19 @@
 	z-index: -1;
 }
 
+.about {
+	padding-block: 50px;
+}
+
 .about-us{
-	max-width: 1440px;
-	max-width: 100%;
+	max-width: 1050px;
 	margin-inline: auto;
 	justify-content: space-around;
-	padding: 50px;
 	gap: 30px;
 	flex-wrap: wrap;
 }
 
-.about-us-link{
+.about-us-btn{
 	background-color: #23A6F0;
 	color: #fff;
 	padding: 15px 33px;
@@ -101,14 +104,14 @@
 	max-width: 376px;
 }
 
-.primary-div-2nd{
+.medium-shape{
 	position: absolute;
 	width: 77px;
 	height: 77px;
 	top: 0;
 }
 
-.primary-div-3rd{
+.sm-shape{
 	position: absolute;
 	width: 33px;
 	height: 33px;
@@ -116,7 +119,7 @@
 	right: 0;
 }
 
-.tranparent-secondary{
+.transparent-secondary{
 	background: #977DF4;
 	width: 14px;
 	height: 14px;
@@ -124,11 +127,11 @@
 	position: absolute;
 }
 
-.secondary-1st {
+.primary-shape {
 	bottom: 258px;
 }
 
-.secondary-2nd {
+.secondary-shape {
 	top: 140px;
 	right: 0;
 }
@@ -145,7 +148,7 @@
 		padding: 20px;
 	}
 
-	.about-us-link{
+	.about-us-btn{
 		margin-inline: auto;
 	}
 
@@ -170,34 +173,34 @@
 		max-width: 100%;
 	}
 
-	.primary-div-2nd {
+	.medium-shape {
 		width: 47px;
     height: 47px;
 }
-	.primary-div {
+	.large-shape {
 		width: 430px;
     height: 430px;
 	}
 }
 
 @media (max-width:768px){
-	.primary-div {
+	.large-shape {
 		width: 295px;
 		height: 295px;
 	}
 
-	.primary-div-2nd {
+	.medium-shape {
 		width: 47px;
 		height: 47px;
 		left: 100px;
 	}
 
-	.secondary-2nd {
+	.secondary-shape {
 		top: 0;
 		right: 0;
 	}
 
-	.secondary-1st {
+	.primary-shape {
 		bottom: 338px;
 		left: 99px;
 	}
@@ -209,20 +212,20 @@
 		max-width: 375px;
 	}
 
-	.primary-div {
+	.large-shape {
 		width: 250px;
 		height: 250px;
 }
 
-.primary-div-2nd {
+.medium-shape {
 	left: 0;
 }
 
-.primary-div-3rd {
+.sm-shape {
 	bottom: 292px;
 }
 
-.secondary-1st {
+.primary-shape {
 	bottom: 211px;
 	left: 28px;
 }
