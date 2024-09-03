@@ -287,12 +287,15 @@
 	.partners{
 		flex-direction: column;
     gap: 60px;
-    padding-block: 110px;
+	}
+
+	.artners-info {
+		max-width: 307px;
 	}
 }
 
 footer{
-	padding: 40px 196px;
+	padding-top: 40px;
 }
 
 @media (max-width:992px) {
@@ -313,6 +316,7 @@ footer{
 	padding: 0;
 	padding-bottom: 20px;
 	justify-content: space-between;
+	padding-bottom: 40px;
 }
 
 .footer-nav-container {
@@ -424,18 +428,6 @@ footer{
 	.nav-item-hide {
 		display: none;
 	}
-
-  .partners {
-    padding: 50px;
-  }
-
-  .footer-nav {
-    padding: 40px 44px;
-  }
-
-  .footer-nav-container {
-    padding: 40px 44px;
-  }
 }
 
 @media (max-width:1070px) {

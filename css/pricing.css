@@ -247,6 +247,10 @@ input:checked + .slider:before {
 	.pricing-plan__card {
 		border-radius: 0;
 	}
+
+	.pricing-plan-standard-card {
+		margin-top: 0;
+	}
 }
 
 .pricing-plan-partner-title {
@@ -258,4 +262,18 @@ input:checked + .slider:before {
 	flex-grow: 1;
 	width: 100%;
 	padding: 0;
+}
+.pricing-faqs-content {
+	max-width: 1050px;
+	margin-inline: auto;
+}
+
+.pricing-faqs__info {
+	gap: 10px;
+	text-align: center;
+}
+.pricing-faqs__info-title {
+	font-size: var(--secondary-heading-font-size);
+	font-weight: var(--font-weight-bold);
+	color: var(--font-color);
 }

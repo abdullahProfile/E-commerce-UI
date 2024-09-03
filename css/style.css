@@ -577,6 +577,7 @@ a:hover {
 .new-collection-description-picture {
 	max-width: 348px;
 	object-fit: cover;
+	overflow: hidden;
 }
 
 .new-collection-img {
@@ -779,11 +780,6 @@ a:hover {
 	margin-inline: auto;
 }
 
-@media (max-width:768px) {
-	.footer-nav-container {
-		padding: 70px 44px;
-	}
-}
 .footer-nav__anchor {
 	gap: 20px;
 }
@@ -840,10 +836,21 @@ a:hover {
 	font-weight: var(--font-weight-bold);
 }
 
+.copy-right {
+	background: #FAFAFA;
+	padding: 25px 195px;
+}
+
+@media (max-width:768px) {
+	.copy-right {
+		padding: 0;
+		padding-block: 25px;
+		text-align: center;
+	}
+}
+
  .cp-R {
 	font-weight: var(--font-weight-bold);
-	padding: 25px 195px;
-	background: #FAFAFA;
 }
 
  .featured-collection-text {
@@ -1085,7 +1092,7 @@ a:hover {
 		flex-wrap: nowrap;
 	}
 
-	.brand-info-container,.footer-nav-container {
+	.brand-info-container, .footer-nav-container {
 		flex-direction: column;
 	}
 
@@ -1096,13 +1103,6 @@ a:hover {
 
 	.brand-info {
 		padding: 41px;
-	}
-
-	.cp-R {
-		padding: 94px;
-		max-width: 193px;
-		max-width: 100%;
-		text-align: center;
 	}
 
 	.featured-collection-text {
@@ -1157,6 +1157,12 @@ a:hover {
 
 	.swiper-pagination{
 		display: none !important;
+	}
+
+	.footer-nav {
+		flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 	}
 }
 

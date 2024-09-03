@@ -181,6 +181,10 @@
 		width: 430px;
     height: 430px;
 	}
+
+	.nav-links, .main-header {
+		background: #f6f6f6;
+	}
 }
 
 @media (max-width:768px){
