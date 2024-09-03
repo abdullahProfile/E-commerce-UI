@@ -403,10 +403,16 @@
 .team-members-img {
 	max-width: 316px;
 	object-fit: cover;
+	overflow: hidden;
 }
 
 .team-members-img img {
 	width: 100%;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		transform: scale(1.1);
+	}
 }
 
 .team-members-title {
@@ -499,6 +505,11 @@
 	border-radius: 5px;
 	max-width: 130px;
 	background: transparent;
+	cursor: pointer;
+
+	&:hover {
+		border: 1px solid black;
+	}
 
 }
 

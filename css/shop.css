@@ -30,7 +30,7 @@
 	justify-content: center;
 }
 
-.shop-header-links {
+.breadcrumbs {
 	gap: 15px;
 	font-size: 14px;
 	font-weight: bold;
@@ -40,7 +40,7 @@
 	font-size: 0;
 }
 
-.shop-card-header__home {
+.breadcrumbs__link {
 	color: #252B42;
 }
 
@@ -123,10 +123,6 @@
 	.shop-card-img-info {
 		left: 50%;
 	}
-
-  .header{
-    padding: 14px 36px;
-  }
 
   .shop-card{
     padding: 0;

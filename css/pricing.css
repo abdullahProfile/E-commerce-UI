@@ -1,1 +1,261 @@
 @import '../css/about.css';
+
+.pricing__content {
+	max-width: 870px;
+	margin-inline: auto;
+	margin-top: 13px;
+	gap: 16px;
+	padding-block: 50px;
+}
+
+.pricing__title {
+	font-weight: var(--font-weight-bold);
+}
+
+.pricing__subtitle {
+	font-size: var(--primary-heading-font-size);
+	font-weight: var(--font-weight-bold);
+	color: var(--font-color);
+}
+
+@media (max-width:992px) {
+	.pricing__subtitle {
+		font-size: 40px;
+	}
+
+	.nav-links, .main-header {
+		background-color: #F6F6F6;
+	}
+}
+
+.switch {
+	display: inline-block;
+	width: 45px;
+	height: 25px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	cursor: pointer;
+	border: 1px solid #23A6F0;
+	background: #fff;
+	-webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider::before {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	left: 4px;
+	bottom: 3px;
+	background-color: #EBEBEB;
+	border: 1px solid #D0D0D0;
+	-webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+.slider.round {
+  border-radius: 16px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.pricing-options {
+	background: #fafafa;
+	padding-block: 112px;
+}
+
+.pricing-options__container {
+	max-width: 1050px;
+	margin-inline: auto;
+	gap: 48px;
+}
+
+.pricing-options__header {
+	gap: 10px;
+	text-align: center;
+}
+
+.pricing-options__title {
+	font-size: var(--secondary-heading-font-size);
+	font-weight: var(--font-weight-bold);
+	color: var(--font-color);
+}
+
+.pricing-options__description {
+	font-size: var(sm-font-size);
+}
+
+.pricing-options__toggle-label {
+	color: var(--font-color);
+	font-weight: var(--font-weight-bold);
+}
+
+.pricing-options__toggle {
+	gap: 12px;
+	margin-bottom: 48px;
+}
+
+.pricing-options-discount {
+	padding: 10px 20px;
+	background: #B2E3FF;
+	color: #23A6F0;
+	border-radius: 34px;
+	font-weight: var(--font-weight-bold);
+	font-size: var(--sm-font-size);
+}
+
+.pricing-plan__card {
+	text-align: center;
+	max-width: 327px;
+	gap: 35px;
+	background: #FFF;
+	border-radius: 10px;
+	padding: 50px 40px;
+}
+
+.pricing-plan__title {
+	font-size: var(--medium-font-size);
+	color: var(--font-color);
+}
+
+.pricing-plan__description {
+	font-weight: var(--font-weight-bold);
+	line-height: 24px;
+}
+
+.pricing-plan__cost {
+	gap: 10px;
+}
+
+.pricing-plan__amount {
+	font-size: var(--secondary-heading-font-size);
+	font-weight: var(--font-weight-bold);
+	color:#23A6F0;
+}
+
+.pricing-plan__currency {
+	align-items: flex-start;
+}
+
+.pricing-plan__currency-symbol {
+	font-size: var(--medium-font-size);
+	font-weight: var(--font-weight-bold);
+	color:#23A6F0;
+
+}
+
+.pricing-plan__frequency {
+	color: #8EC2F2;
+	font-size: var(--sm-font-size);
+	font-weight: var(--font-weight-bold);
+}
+
+.features {
+	gap: 16px;
+}
+
+.pricing-plan__features {
+	gap: 10px;
+}
+
+.pricing-plan__icon {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #2DC071;
+	padding: 8px 10px;
+}
+
+.pricing-plan__feature-text {
+	font-size: var(--sm-font-size);
+	font-weight: var(--font-weight-bold);
+	color: var(--font-color);
+}
+
+.pricing-plan__icon-bg {
+	background: #BDBDBD;
+}
+
+.pricing-plan__cta {
+	text-decoration: none;
+	padding: 15px 42px;
+	color: #fff;
+	background: var(--font-color);
+	border-radius: 5px;
+	font-size: var(--sm-font-size);
+	font-weight: var(--font-weight-bold);
+	text-transform: capitalize;
+	width: 246px;
+
+	&:hover {
+		color: #BDBDBD;
+	}
+}
+
+.pricing-plan-standard-card {
+	background-color: var(--font-color);
+	margin-top: -40px;
+}
+
+.standard-card-font-color {
+	color: #fff;
+}
+
+.standard-card-cta {
+	background: #23A6F0;
+}
+
+.pricing-plan {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media (max-width:768px) {
+	.pricing-options {
+		padding: 30px 41px;
+	}
+
+	.pricing-plan {
+		gap: 30px;
+	}
+
+	.pricing-plan__card {
+		border-radius: 0;
+	}
+}
+
+.pricing-plan-partner-title {
+	font-size: 20px;
+	color: var(--font-color);
+}
+
+.partners {
+	flex-grow: 1;
+	width: 100%;
+	padding: 0;
+}

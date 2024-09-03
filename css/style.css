@@ -183,10 +183,6 @@ p,a {
 	.counter {
 		color: var(--font-color) !important;
 	}
-
-	.header {
-		padding: 15px;
-	}
 }
 
 .anchor-links {
