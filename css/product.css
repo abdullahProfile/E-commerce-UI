@@ -48,6 +48,16 @@
 		align-items: center;
 	}
 }
+
+@media (max-width:768px) {
+	.swiper-w-text {
+		width: 100%;
+	}
+
+	.swiper {
+		width: 100% !important;
+	}
+}
 .product-review{
     gap: 5px;
     align-items: center;
@@ -271,15 +281,17 @@
 		align-items: center;
 	}
 
-	.card-txt{
-		max-width: 239px;
-	}
-
 	.faq-nav{
 		gap: 5px;
 	}
 }
 
+@media (max-width:768px) {
+	.card-txt{
+		max-width: 100%;
+		width: 100%;
+	}
+}
 .featured-collection-info{
 	gap: 10px;
 	padding: 25px 35px;

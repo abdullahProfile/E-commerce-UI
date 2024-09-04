@@ -780,6 +780,13 @@ a:hover {
 	margin-inline: auto;
 }
 
+@media (max-width:768px) {
+	.footer-nav-container {
+		margin-inline: 0;
+		flex-direction: column;
+	}
+}
+
 .footer-nav__anchor {
 	gap: 20px;
 }
@@ -1092,7 +1099,7 @@ a:hover {
 		flex-wrap: nowrap;
 	}
 
-	.brand-info-container, .footer-nav-container {
+	.brand-info-container{
 		flex-direction: column;
 	}
 

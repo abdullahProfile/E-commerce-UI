@@ -319,10 +319,6 @@ footer{
 	padding-bottom: 40px;
 }
 
-.footer-nav-container {
-	padding: 0;
-}
-
 @media (max-width:414px){
 	.Subscirbe-btn {
 	right: -55px;
