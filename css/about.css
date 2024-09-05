@@ -1,6 +1,4 @@
 @import '../css/product.css';
-@import '../css/shop.css';
-@import '../css/style.css';
 
 .nav-item-hide{
 	display: none;
@@ -10,12 +8,10 @@
 	font-size: 14px;
 	text-decoration: none;
 	color: #23A6F0;
-	font-weight: 700;
 	cursor: pointer;
 }
 
 .member-ship{
-	display: flex;
 	gap: 45px;
 }
 
@@ -24,7 +20,7 @@
 	background-color: #23A6F0;
 	color: #fff;
 	border-radius: 5px;
-	gap: 5px;
+	gap: 15px;
 	transition: all 0.3s ease-in;
 
 	&:hover{
@@ -71,7 +67,6 @@
 	max-width: 193px;
 	border-radius: 5px;
 	font-size: 14px;
-	font-weight: 700;
 	transition: all 0.3s ease-in;
 
 	&:hover{
@@ -85,16 +80,12 @@
 	padding: 10px;
 }
 
-
 .about-company{
-	color: #252B42;
-	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .about-us-heading{
 	font-size: 58px;
-	font-weight: bold;
 	text-transform: uppercase;
 	color: #252B42;
 }
@@ -260,8 +251,6 @@
 
 .info-description {
 	font-size: 24px;
-	color: #252B42;
-	font-weight: var(--font-weight-bold);
 	line-height: 32px;
 }
 
@@ -297,14 +286,9 @@
 
 .stat-number {
 	font-size: var(--primary-heading-font-size);
-	color: var(--font-color);
-	font-weight: var(--font-weight-bold);
 	line-height: 80px;
 }
 
-.stat-description {
-	font-weight: var(--font-weight-bold);
-}
 
 @media (max-width:768px) {
 	.stats-container {
@@ -361,7 +345,6 @@
 }
 .team-info-title {
 	font-size: var(--secondary-heading-font-size);
-	color: var(--font-color);
 	line-height: 50px;
 }
 
@@ -421,12 +404,10 @@
 
 .team-members-title {
 	color: var(--font-color);
-	font-weight: var(--font-weight-bold);
 }
 
 .team-members-description {
 	font-size: var(--sm-font-size);
-	font-weight: var(--font-weight-bold);
 	color: #737373;
 }
 
@@ -458,7 +439,6 @@
 
 .partners-info-title {
 	font-size: var(--secondary-heading-font-size);
-	color: var(--font-color);
 }
 
 .partners-info-description {
@@ -469,6 +449,7 @@
 
 .partners {
 	text-align: center;
+	margin-inline: auto;
 }
 
 .work__container {
@@ -485,14 +466,12 @@
 }
 
 .work__info-title {
-	font-weight: var(--font-weight-bold);
 	text-transform: capitalize;
 	color: #fff;
 }
 
 .work__info-heading {
 	font-size: var(--secondary-heading-font-size);
-	font-weight: var(--font-weight-bold);
 	text-transform: capitalize;
 }
 

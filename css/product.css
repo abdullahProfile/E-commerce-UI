@@ -59,29 +59,25 @@
 	}
 }
 .product-review{
-    gap: 5px;
-    align-items: center;
+	gap: 5px;
+	align-items: center;
 }
 
-.product-review p {
+.product-review-text {
     color: #737373;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: var(--sm-font-size);
     margin-left: 5px;
 }
 
 .product-price{
-    font-size: 24px;
-    font-weight: 700;
-    color: #252B42;
-    line-height: .75;
-    letter-spacing: .1px;
+	font-size: 24px;
+	line-height: .75;
+	letter-spacing: .1px;
 	padding: 0;
 }
 
 .product-stock{
     font-size: 14px;
-    font-weight: bold;
     line-height: 0.14;
 }
 
@@ -105,7 +101,6 @@
 }
 
 .product-name{
-	color: #252B42;
 	font-size: 20px;
 }
 
@@ -114,7 +109,6 @@
 	background-color: #23A6F0;
 	color: #fff;
 	font-size: 14px;
-	font-weight: bold;
 	border-radius: 5px;
 	border: 0;
 	cursor: pointer;
@@ -197,14 +191,12 @@
 }
 
 .faq-container-txt p {
-	font-size: 14px;
+	font-size: var(--sm-font-size);
 	line-height: 20px;
 }
 
 .faq-title{
 	font-size: 24px;
-	font-weight: bold;
-	color: #252B42;
 }
 
 .arrow {
@@ -315,8 +307,6 @@
 
 .featured-collection-title {
 	font-size: 24px;
-	color: #252B42;
-	font-weight: var(--font-weight-bold);
 	border-bottom: 1px solid #ECECEC;
 	padding-bottom: 24px;
 }

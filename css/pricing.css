@@ -1,21 +1,16 @@
 @import '../css/about.css';
 
+.pricing {
+	padding-block: 50px;
+}
 .pricing__content {
 	max-width: 870px;
 	margin-inline: auto;
-	margin-top: 13px;
 	gap: 16px;
-	padding-block: 50px;
-}
-
-.pricing__title {
-	font-weight: var(--font-weight-bold);
 }
 
 .pricing__subtitle {
 	font-size: var(--primary-heading-font-size);
-	font-weight: var(--font-weight-bold);
-	color: var(--font-color);
 }
 
 @media (max-width:992px) {
@@ -67,7 +62,8 @@
 }
 
 input:checked + .slider {
-	background-color: #2196F3;
+	background-color: #252B42;
+	border: 1px solid #252B42;
 }
 
 input:checked + .slider:before {
@@ -102,17 +98,10 @@ input:checked + .slider:before {
 
 .pricing-options__title {
 	font-size: var(--secondary-heading-font-size);
-	font-weight: var(--font-weight-bold);
-	color: var(--font-color);
 }
 
 .pricing-options__description {
 	font-size: var(sm-font-size);
-}
-
-.pricing-options__toggle-label {
-	color: var(--font-color);
-	font-weight: var(--font-weight-bold);
 }
 
 .pricing-options__toggle {
@@ -125,7 +114,6 @@ input:checked + .slider:before {
 	background: #B2E3FF;
 	color: #23A6F0;
 	border-radius: 34px;
-	font-weight: var(--font-weight-bold);
 	font-size: var(--sm-font-size);
 }
 
@@ -140,11 +128,9 @@ input:checked + .slider:before {
 
 .pricing-plan__title {
 	font-size: var(--medium-font-size);
-	color: var(--font-color);
 }
 
 .pricing-plan__description {
-	font-weight: var(--font-weight-bold);
 	line-height: 24px;
 }
 
@@ -152,10 +138,12 @@ input:checked + .slider:before {
 	gap: 10px;
 }
 
+.pricing-plan__amount, .pricing-plan__currency-symbol {
+	color:#23A6F0;
+}
+
 .pricing-plan__amount {
 	font-size: var(--secondary-heading-font-size);
-	font-weight: var(--font-weight-bold);
-	color:#23A6F0;
 }
 
 .pricing-plan__currency {
@@ -164,15 +152,11 @@ input:checked + .slider:before {
 
 .pricing-plan__currency-symbol {
 	font-size: var(--medium-font-size);
-	font-weight: var(--font-weight-bold);
-	color:#23A6F0;
-
 }
 
 .pricing-plan__frequency {
 	color: #8EC2F2;
 	font-size: var(--sm-font-size);
-	font-weight: var(--font-weight-bold);
 }
 
 .features {
@@ -193,8 +177,6 @@ input:checked + .slider:before {
 
 .pricing-plan__feature-text {
 	font-size: var(--sm-font-size);
-	font-weight: var(--font-weight-bold);
-	color: var(--font-color);
 }
 
 .pricing-plan__icon-bg {
@@ -255,7 +237,6 @@ input:checked + .slider:before {
 
 .pricing-plan-partner-title {
 	font-size: 20px;
-	color: var(--font-color);
 }
 
 .partners {
@@ -280,13 +261,9 @@ input:checked + .slider:before {
 }
 .pricing-faqs__info-title {
 	font-size: var(--secondary-heading-font-size);
-	font-weight: var(--font-weight-bold);
-	color: var(--font-color);
 }
 
 .faq-title {
-	color: var(--font-color);
-	font-weight: var(--font-weight-bold);
 	font-size: 16px;
 }
 
@@ -343,11 +320,11 @@ input:checked + .slider:before {
 	margin-inline: auto;
 	gap: 30px;
 	align-items: center;
+	text-align: center;
 }
 
 .trial-section__title {
 	font-size: var(--secondary-heading-font-size);
-	font-weight: var(--font-weight-bold);
 }
 
 .trial-section__description {
@@ -360,8 +337,11 @@ input:checked + .slider:before {
 	text-decoration: none;
 	background: #2196F3;
 	font-size: var(--sm-font-size);
-	font-weight: var(--font-weight-bold);
 	border-radius: 5px;
+
+	&:hover {
+		color: #252B42;
+	}
 }
 
 .trial-section__socials {
