@@ -86,7 +86,7 @@ body {
 	text-transform: uppercase;
 }
 
-p,a {
+.text-secondary {
 	color: #737373;
 }
 
@@ -890,7 +890,6 @@ a:hover {
 
 .lore-text {
 	font-size: 12px;
-	color: #737373;
 }
 
 .checkout-container-txt {

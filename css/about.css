@@ -408,7 +408,6 @@
 
 .team-members-description {
 	font-size: var(--sm-font-size);
-	color: #737373;
 }
 
 .social-acounts {
@@ -443,7 +442,6 @@
 
 .partners-info-description {
 	font-size: var(--sm-font-size);
-	color: #737373;
 	line-height: 20px;
 }
 

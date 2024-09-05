@@ -101,7 +101,7 @@ input:checked + .slider:before {
 }
 
 .pricing-options__description {
-	font-size: var(sm-font-size);
+	font-size: var(--sm-font-size);
 }
 
 .pricing-options__toggle {

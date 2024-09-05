@@ -64,7 +64,6 @@
 }
 
 .product-review-text {
-    color: #737373;
     font-size: var(--sm-font-size);
     margin-left: 5px;
 }
@@ -163,7 +162,6 @@
 }
 .faq-nav-link{
 	font-size: 14px;
-	font-weight: 600;
 	text-decoration: none;
 	text-align: center;
 }
@@ -254,7 +252,6 @@
 }
 
 .faq-question-info {
-	font-weight: 700;
 	font-size: 14px;
 }
 
