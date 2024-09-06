@@ -24,7 +24,7 @@
 	transition: all 0.3s ease-in;
 
 	&:hover{
-		background-color: #000;
+		color: var(--font-color);
 	}
 }
 
@@ -70,7 +70,7 @@
 	transition: all 0.3s ease-in;
 
 	&:hover{
-		background-color: #000;
+		color: var(--font-color);
 	}
 }
 
@@ -154,6 +154,7 @@
 	.img-div{
 		max-width: 500px;
 		margin-left: auto;
+		margin-right: 20px;
 	}
 
 	.about-us__img{
@@ -191,8 +192,8 @@
 	}
 
 	.secondary-shape {
-		top: 0;
-		right: 0;
+		top: 87px;
+		right: 17px;
 	}
 
 	.primary-shape {
@@ -217,12 +218,13 @@
 }
 
 .sm-shape {
-	bottom: 292px;
+	bottom: 219px;
+	right: 27px
 }
 
 .primary-shape {
-	bottom: 211px;
-	left: 28px;
+	bottom: 194px;
+	left: 17px;
 }
 
 }
@@ -359,8 +361,16 @@
 	justify-content: center;
 }
 
+.icon {
+	cursor: pointer;
+}
+
 .icon path{
 	fill: #23A6F0;
+
+	&:hover {
+		fill: var(--font-color);
+	}
 }
 
 @media (max-width:768px) {
@@ -385,6 +395,11 @@
 .team-members-details {
 	max-width: 316px;
 	text-align: center;
+	transition: all .3s ease-in;
+
+	&:hover {
+		transform: scale(1.04);
+	}
 }
 
 .team-members-img {
@@ -395,11 +410,6 @@
 
 .team-members-img img {
 	width: 100%;
-	transition: all 0.3s ease-in-out;
-
-	&:hover{
-		transform: scale(1.1);
-	}
 }
 
 .team-members-title {
@@ -451,6 +461,7 @@
 }
 
 .work__container {
+	max-width: 1440px;
 	margin-inline: auto;
 	background: #2A7CC7;
 	justify-content: space-between;
@@ -487,9 +498,9 @@
 	max-width: 130px;
 	background: transparent;
 	cursor: pointer;
-
+	transition: all .3s ease-in;
 	&:hover {
-		border: 1px solid black;
+		color: var(--font-color);
 	}
 
 }
