@@ -229,11 +229,32 @@ ul li a {
 	cursor: pointer;
 	font-size: 24px;
 	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	z-index: 1;
 	transition: all 0.3s ease-in;
+}
 
-	&:hover {
-		color: var(--font-color);
-	}
+.primary-btn::after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background-color: var(--font-color);
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.primary-btn:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+.primary-btn:active {
+	top: 2px;
 }
 
 .h1 {
@@ -257,7 +278,7 @@ ul li a {
 
 .collection {
 	max-width: 1440px;
-	max-width: 100%;
+	margin-inline: auto;
 }
 
 .collection-info__text {
@@ -280,6 +301,7 @@ ul li a {
 
 	&:hover {
 		transform: scale(1.04);
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 	}
 }
 
@@ -416,7 +438,6 @@ ul li a {
 
 .classic-product {
 	max-width: 1440px;
-	max-width: 100%;
 	margin-inline: auto;
 	padding-top: 112px;
 	background:#23856D;
@@ -502,20 +523,6 @@ ul li a {
 	.checkout-container-description {
 		max-width: 231px;
 	}
-}
-
-
-.read-me-btn {
-	background: none;
-	color: #2DC071;
-	font-size: var(--sm-font-size);
-	border: 1px solid currentColor;
-	transition: all 0.3s ease-in;
-}
-
-.read-me-btn:hover {
-	background: #000000f3;
-	color: #FFF;
 }
 
 .checkout-container {
@@ -707,6 +714,7 @@ ul li a {
 }
 
 .categories-container-btn {
+	position: relative;
 	position: absolute;
 	bottom: 26px;
 	left: 31px;
@@ -716,13 +724,25 @@ ul li a {
 	border: 0;
 	font-size: 16px;
 	transition: all 0.3s ease-in;
+	display: inline-block;
+	z-index: 1;
+}
 
-	&:hover{
-		cursor: pointer;
-		background-color: var(--font-color);
-		border-radius: 5px;
-		color: #FFF;
-	}
+.categories-container-btn::after {
+	content: "";
+	width: 0;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	background: #e0e0e0;
+	transition: all .3s ease;
+}
+
+.categories-container-btn:hover::after {
+	left: 0;
+	width: 100%;
 }
 
 .women-categories {
@@ -950,24 +970,45 @@ ul li a {
 	text-transform: uppercase;
 	color: #FFF !important;
 	padding: 15px 40px;
-
-	&:hover{
-		color: var(--font-color) !important;
-	}
 }
 
-
 .read-me-btn {
+	background: none;
 	color: #2DC071;
 	width: 171px;
 	padding: 15px 40px;
 	border-radius: 10px;
 	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	transition: all 0.3s ease-in;
+	font-size: var(--sm-font-size);
+	border: 1px solid currentColor;
+	transition: all 0.3s ease-in;
+}
 
-	&:hover {
-		color: var(--font-color);
-		background: none;
-	}
+.read-me-btn::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 100%;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	border-radius: 10px;
+	background-color: var(--background-color);
+	transition: all 0.3s ease;
+}
+
+.read-me-btn:hover::after {
+	width: 100%;
+	left: 0;
+}
+
+.read-me-btn:hover {
+	color: #fff;
+	border: 0;
 }
 
 @media (max-width:768px) {

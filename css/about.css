@@ -6,26 +6,53 @@
 
 .header-nav{
 	font-size: 14px;
-	text-decoration: none;
 	color: #23A6F0;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .member-ship{
 	gap: 45px;
 }
 
-.member-link{
+.about-primary-link{
 	padding: 15px 25px;
+
+}
+
+.about-primary-link span {
+	margin-left: 15px;
+}
+.about-primary-btn {
 	background-color: #23A6F0;
 	color: #fff;
 	border-radius: 5px;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
 	gap: 15px;
+	z-index: 1;
 	transition: all 0.3s ease-in;
+}
 
-	&:hover{
-		color: var(--font-color);
-	}
+.about-primary-btn::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	direction: rtl;
+	z-index: -1;
+	background: #3a98f0d2;
+	border-radius: 5px;
+	transition: all .3s ease;
+}
+
+.about-primary-btn:hover::after {
+	width: 100%;
+	left: auto;
+	right: 0;
 }
 
 .header{
@@ -59,19 +86,10 @@
 	flex-wrap: wrap;
 }
 
-.about-us-btn{
-	background-color: #23A6F0;
-	color: #fff;
+.about-secondary-btn{
 	padding: 15px 33px;
-	text-decoration: none;
 	max-width: 193px;
-	border-radius: 5px;
 	font-size: 14px;
-	transition: all 0.3s ease-in;
-
-	&:hover{
-		color: var(--font-color);
-	}
 }
 
 .about-us-info{
@@ -139,7 +157,7 @@
 		padding: 20px;
 	}
 
-	.about-us-btn{
+	.about-secondary-btn{
 		margin-inline: auto;
 	}
 

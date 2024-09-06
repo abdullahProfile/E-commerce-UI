@@ -193,10 +193,28 @@ input:checked + .slider:before {
 	font-weight: var(--font-weight-bold);
 	text-transform: capitalize;
 	width: 246px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	transition: all .3s ease-in;
+}
 
-	&:hover {
-		color: #BDBDBD;
-	}
+.pricing-plan__cta::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	z-index: -1;
+	transition: all .3s ease;
+	background: #4067bad2;
+	border-radius: 5px;
+}
+
+.pricing-plan__cta:hover::after {
+	width: 100%;
+	left: 0;
 }
 
 .pricing-plan-standard-card {
@@ -333,15 +351,10 @@ input:checked + .slider:before {
 
 .trial-section__cta {
 	padding: 15px 40px;
-	color: #fff;
-	text-decoration: none;
-	background: #2196F3;
+	width: 184px;
+	background: #23A6F0;
 	font-size: var(--sm-font-size);
-	border-radius: 5px;
 
-	&:hover {
-		color: #252B42;
-	}
 }
 
 .trial-section__socials {
