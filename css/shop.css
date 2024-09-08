@@ -20,6 +20,10 @@
 	font-weight: normal;
 }
 
+.main-header {
+	padding: 0;
+	padding-block: 23px;
+}
 .header {
 	justify-content: space-between;
 	max-width: 1042px;
@@ -51,7 +55,7 @@
 
 @media (max-width:992px){
 	.shopping-section{
-		padding: 0 41px;
+		padding: 24px 41px;
 	}
 }
 
@@ -108,6 +112,9 @@
 		max-width: 100%;
 	}
 
+	.img-container img {
+		width: 100%;
+	}
 	.nav-item-hide {
 		display: none
 	}
@@ -131,6 +138,10 @@
   .card-txt {
     flex-grow: 1;
   }
+
+	.main-header {
+		padding-inline: 35px;
+	}
 
 }
 @media (max-width:768px){
@@ -409,6 +420,7 @@ footer{
 	.header-text {
 		font-size: 30px;
 		color: #23A6F0;
+		font-weight: 400;
 	}
 
 	.counter{

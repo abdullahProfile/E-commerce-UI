@@ -55,10 +55,6 @@
 	right: 0;
 }
 
-.header{
-	justify-content: space-around;
-}
-
 .transparent-primary{
 	background-color: #FFE9EA;
 	border-radius: 50%;
@@ -194,6 +190,10 @@
 
 	.nav-links, .main-header {
 		background: #f6f6f6;
+	}
+
+	.mobile-menu-icon {
+		margin-top: 0;
 	}
 }
 

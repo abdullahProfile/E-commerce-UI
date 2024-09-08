@@ -170,12 +170,12 @@ body {
 		transform: translateX(0);
 		display: block;
 		opacity: 1;
-		font-size: 30px;
 	}
 
 	.mobile-menu-icon {
 		display: block;
 		cursor: pointer;
+		margin-top: 8px;
 	}
 
 	.mbl-icon path {
@@ -184,6 +184,12 @@ body {
 
 	.counter {
 		color: var(--font-color) !important;
+	}
+
+	.nav-links li a {
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 0;
 	}
 }
 
