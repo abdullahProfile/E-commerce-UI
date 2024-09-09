@@ -1,0 +1,188 @@
+@import '../css/team.css';
+
+.sm-shape {
+	bottom: 522px;
+}
+
+.primary-shape {
+	bottom: 363px;
+}
+
+.about-us-info {
+	padding: 0;
+}
+
+.contect-info {
+	font-size: 24px;
+}
+
+.trial-section__social-link-fa svg {
+	background-color: #252B42;
+}
+
+.trial-section__social-link svg path{
+	fill: #252B42;
+}
+
+@media (max-width: 992px) {
+	.img-div {
+		margin-right: 0;
+	}
+
+	.sm-shape {
+		width: 18px;
+    height: 18px;
+	}
+
+	.about-us-info {
+		align-items: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.primary-shape {
+		bottom: 163px;
+		left: 0;
+	}
+
+	.about-us-heading {
+		font-size: 40px;
+	}
+
+	.large-shape {
+		width: 430px;
+		height: 430px;
+	}
+
+	.medium-shape {
+		left: 0;
+		top: 40px;
+}
+
+.secondary-shape {
+	width: 9px;
+	height: 9px;
+}
+
+}
+
+
+@media (max-width: 550px) {
+	.large-shape {
+		width: 295px !important;
+    height: 295px !important;
+    right: 20px;
+    top: 27px;
+	}
+
+	.sm-shape {
+		right: 0;
+    bottom: 309px;
+}
+
+.large-shape {
+	width: 430px;
+	height: 430px;
+}
+
+}
+
+.contect-section_container {
+	max-width: 1050px;
+	margin-inline: auto;
+	gap: 80px;
+	padding-block: 112px;
+}
+
+.contact-section__header {
+	gap: 10px;
+	max-width: 625px;
+	text-align: center;
+}
+
+.contact-section__header-title {
+	font-size: var(--secondary-heading-font-size);
+}
+
+.contact-card {
+	max-width: 327px;
+	gap: 15px;
+	text-align: center;
+	padding: 50px 40px;
+	transition: all .3s ease-in;
+
+	&:hover {
+		transform: scale(1.03);
+	}
+}
+
+.contact-card__link {
+	border: 1px solid #23A6F0;
+	border-radius: 37px;
+	padding: 15px 36px;
+	color: #23A6F0;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+	transition: all 0.3s ease-in;
+	font-size: var(--sm-font-size);
+}
+
+.contact-card__link::after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background-color: #fafafa;
+	border-radius: 37px;
+	transition: all 0.3s ease;
+}
+
+.contact-card__link:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+.contact-card__link:active {
+	top: 2px;
+}
+
+.contact-card__icon svg path:hover {
+	fill: cadetblue;
+}
+@media (max-width:768px) {
+	.contact-section__content {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.contect-section_container {
+		background: #fafafa;
+		padding-inline: 42px;
+	}
+
+	.contact-card {
+		background: #fff;
+	}
+
+	.contact-card__link {
+		border-radius: 5px;
+	}
+
+	.contact-card__link::after {
+		border-radius: 5px;
+	}
+}
+
+.contact-card__phone {
+	padding: 80px 40px;
+	background: #252B42;
+}
+
+.contact-card__phone-txt {
+	color: #fff;
+}
