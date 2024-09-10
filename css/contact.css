@@ -186,3 +186,44 @@
 .contact-card__phone-txt {
 	color: #fff;
 }
+
+.trial-section {
+	padding: 0;
+	padding-bottom: 80px;
+}
+
+.trial-section__description {
+	font-size: 16px;
+}
+
+.trial-section__title {
+	font-size: 58px;
+}
+
+.trial-section__content {
+  transition: all 0.3s ease-in;
+}
+
+.trial-section__content:hover .trial-section__content-arrow {
+  animation: arrow-move 0.3s ease infinite;
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width:768px) {
+	.trial-section {
+		padding-top: 33px;
+		padding-inline: 46px;
+	}
+}
+

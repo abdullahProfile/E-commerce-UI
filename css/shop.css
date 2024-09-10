@@ -279,7 +279,7 @@
 }
 
 .work-with{
-	padding-block: 80px;
+	padding-block: 58px;
 	background: #FAFAFA;
 }
 
@@ -313,25 +313,16 @@
 	}
 }
 
-footer{
-	padding-block: 40px;
-}
-
 .footer-nav-container {
 	padding: 0;
 	margin-inline: 0;
-}
-
-@media (max-width:992px) {
- footer{
-	padding: 41px;
- }
 }
 
 .footer{
 	gap: 60px;
 	max-width: 1050px;
 	margin-inline: auto;
+	padding-block: 40px;
 }
 
 .footer-nav {
@@ -341,12 +332,6 @@ footer{
 	padding-bottom: 20px;
 	justify-content: space-between;
 	padding-bottom: 40px;
-}
-
-@media (max-width:414px){
-	.Subscirbe-btn {
-	right: -55px;
-	}
 }
 
 .pagination-section {
@@ -449,6 +434,11 @@ footer{
 
 	.nav-item-hide {
 		display: none;
+	}
+
+	.footer {
+		padding: 0;
+		padding: 46px;
 	}
 }
 
