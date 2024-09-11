@@ -18,19 +18,28 @@
     width: 100%;
   }
 
+  .swiper-pagination {
+    bottom: 49px !important;
+  }
   .swiper-pagination-bullet{
     width: 62px !important;
     height: 10px ;
     background-color: #fff !important;
     opacity: .10;
     border-radius: 0 !important;
-    margin-bottom: 80px !important;
   }
 
+  .swiper .swiper-button-next:hover {
+    color: black !important;
+}
+
+  .swiper .swiper-button-prev:hover {
+    color: black !important;
+}
   .swiper-button-next {
     right: 40px !important;
   }
-  
+
   @media (max-width:1440px){
     .swiper-button-next{
       top: 283px !important;
