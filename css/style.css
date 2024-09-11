@@ -602,7 +602,6 @@ ul li a {
 .description-details-heading {
 	font-size: 20px;
 	font-weight: 400;
-	padding-block: 10px;
 }
 
 .featured-collection-info {
@@ -623,10 +622,6 @@ ul li a {
 
 .post-txt {
 	font-size: 12px;
-}
-
-.post-announcment {
-	padding-block: 20px 25px;
 }
 
 .timer {

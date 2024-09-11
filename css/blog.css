@@ -1,0 +1,34 @@
+@import '../css/contact.css';
+
+.featured-collections {
+	max-width: 1050px;
+	margin-inline: auto;
+	flex-wrap: wrap;
+	gap: 80px 30px;
+	padding-block: 160px;
+}
+
+.featured-collection-content {
+	max-width: 470px;
+}
+
+.hide-img {
+	display: none;
+}
+
+@media (max-width:768px) {
+	.featured-collections {
+		align-items: center;
+		padding-block: 80px;
+		padding-inline: 43px;
+		gap: 30px;
+	}
+
+	.collection-img {
+		display: none;
+	}
+
+	.hide-img {
+		display: block;
+	}
+}
