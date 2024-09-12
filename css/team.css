@@ -92,3 +92,7 @@
 svg:hover {
 	fill: var(--font-color);
 }
+
+.social-acounts a {
+	font-size: 0;
+}
