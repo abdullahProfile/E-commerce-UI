@@ -592,6 +592,7 @@ ul li a {
 
 .featured-collection-info {
 	padding: 25px;
+	gap: 10px;
 }
 
 .featured-collection-info-text {
