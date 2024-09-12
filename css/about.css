@@ -357,6 +357,7 @@
 	max-width: 1050px;
 	margin-inline: auto;
 	gap: 112px;
+	padding-block: 112px;
 }
 
 .team-info {
@@ -385,12 +386,11 @@
 
 .icon path{
 	fill: #23A6F0;
-
-	&:hover {
-		fill: var(--font-color);
-	}
 }
 
+ svg:hover path {
+	fill: var(--font-color) !important;
+}
 @media (max-width:768px) {
 	.team-members {
 		flex-wrap: wrap;
@@ -411,12 +411,13 @@
 }
 
 .team-members-details {
-	max-width: 316px;
+	width: 316px;
 	text-align: center;
-	transition: all .3s ease-in;
+	transition: transform .3s ease-in;
+	gap: 25px;
 
 	&:hover {
-		transform: scale(1.04);
+		transform: translateY(-10px);
 	}
 }
 
@@ -428,6 +429,7 @@
 
 .team-members-img img {
 	width: 100%;
+	object-fit: cover;
 }
 
 .team-members-title {
@@ -446,7 +448,6 @@
 
 .team-members-info {
 	gap: 10px;
-	padding-block: 30px;
 }
 
 .partners-info {

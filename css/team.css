@@ -88,3 +88,7 @@
 .trial-section {
 	padding-block: 80px;
 }
+
+svg:hover {
+	fill: var(--font-color);
+}

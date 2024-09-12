@@ -310,7 +310,7 @@ ul li a {
 	transition: all .3s ease-in;
 
 	&:hover {
-		transform: scale(1.04);
+		transform: translateY(-15px);
 	}
 }
 
@@ -429,6 +429,7 @@ ul li a {
 	background:#23856D;
 	padding-top: 112px;
 	max-width: 1440px;
+	margin-inline: auto;
 }
 
 .classic-product-text {
@@ -482,22 +483,23 @@ ul li a {
 	top: 330px;
 }
 
-
 .text-img {
 	max-width: 725px;
 	max-width: 100%;
 }
 
+.checkout-container-text {
+	gap: 30px;
+}
+
 .checkout-container-title {
 	font-size: 40px;
 	max-width: 375px;
-	padding-block: 30px;
 }
 
 .checkout-container-description {
 	max-width: 383px;
 	font-size: 20px;
-	padding-bottom: 30px;
 	line-height: 1.5;
 }
 
@@ -561,7 +563,7 @@ ul li a {
 	transition: all .3s ease;
 
 	&:hover {
-		transform: scale(1.03);
+		transform: translateY(-10px);
 	}
 }
 
@@ -621,12 +623,13 @@ ul li a {
 }
 
 .more-details-link {
-	gap: 20px;
-}
-
-.more-details-link a {
+	gap: 10px;
 	text-decoration: none;
 	font-size: 12px;
+}
+
+.more-details-link span {
+	font-size: 0;
 }
 
 .featured-collections {
@@ -967,10 +970,10 @@ ul li a {
 	padding: 15px 40px;
 	border-radius: 10px;
 	cursor: pointer;
+	background-color: #fff;
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	transition: all 0.3s ease-in;
 	font-size: var(--sm-font-size);
 	border: 1px solid currentColor;
 	transition: all 0.3s ease-in;
@@ -991,12 +994,11 @@ ul li a {
 
 .read-me-btn:hover:after {
 	width: 100%;
-	left: 0;
 }
 
 .read-me-btn:hover {
 	color: #fff;
-	border: 0;
+	border: 1px solid currentColor;
 }
 
 .read-me-btn:active {

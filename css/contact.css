@@ -112,7 +112,7 @@
 	transition: all .3s ease-in;
 
 	&:hover {
-		transform: scale(1.03);
+		transform: translateY(-10px);
 	}
 }
 
@@ -151,8 +151,8 @@
 	top: 2px;
 }
 
-.contact-card__icon svg path:hover {
-	fill: cadetblue;
+.contact-card__icon svg:hover path {
+	fill: cadetblue !important;
 }
 @media (max-width:768px) {
 	.contact-section__content {
