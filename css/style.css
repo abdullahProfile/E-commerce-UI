@@ -203,14 +203,30 @@ body {
 
 ul li a {
 	text-decoration: none;
-	margin-bottom: 10px;
-	transition: all 0.1s ease-in;
-
-	&:hover {
-		border-bottom: 2px solid;
-	}
+	display: inline-block;
+	position: relative;
+	transition: all 0.3s ease-in;
 }
 
+ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #23A6F0;
+	z-index: 1;
+	transition: all .3s ease-in;
+}
+
+ul li a:hover::after {
+	width: 100%;
+}
+
+ul li a:hover {
+	color: #23A6F0;
+}
 
 .list-style {
 	list-style: none;
